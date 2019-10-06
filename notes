@@ -1,0 +1,6 @@
+When saving:
+- git add .
+- git commit -m "some notes here"
+- heroku git:remote -a feast-website
+- git push heroku master
+- heroku open
