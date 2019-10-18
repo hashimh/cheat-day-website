@@ -111,11 +111,10 @@ body {
     display: block;
   }
 
-  /* .topview::after {
-   -moz-background-size: cover;
-   -webkit-background-size: cover;
-   background-size: cover;
-  } */
+  .topview::after {
+    background-image: url("../../images/stonewall_mobile.jpg");
+    background-position: center center;
+  }
 
   .midview {
     display: block;
