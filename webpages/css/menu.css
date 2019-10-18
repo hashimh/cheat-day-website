@@ -49,6 +49,7 @@ body {
 .menuitem {
   height: 100vh;
   padding-top: 10vh;
+  text-align: center;
 }
 
 .menuitem h1 {
@@ -63,19 +64,19 @@ body {
 }
 
 #menuitem1 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../images/burgermenu.jpg");
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)), url("../../images/burgermenu.jpg");
 }
 
 #menuitem2 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../images/pizzamenu.jpg");
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)), url("../../images/pizzamenu.jpg");
 }
 
 #menuitem3 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../images/kebabmenu.jpg");
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)), url("../../images/kebabmenu.jpg");
 }
 
 #menuitem4 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../images/sidesmenu.jpeg");
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)), url("../../images/sidesmenu.jpeg");
 
 }
 
@@ -87,25 +88,23 @@ body {
 }
 
 .col {
-  float: left;
-  width: 42%;
-  text-align: center;
-  background-color: rgba(47,79,79,0.85);
+  background-color: rgba(47,79,79,0.95);
   border-radius: 1vh;
-  margin: 2%;
-  margin-left: 4%;
-  margin-right: 4%;
   height: 60vh;
-}
-
-.cols:after {
-  content: "";
-  display: table;
-  clear: both;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-top: 4vh;
+  padding: 0.5vw;
+  column-count: 2;
+  column-fill: balance;
+  -moz-column-fill: balance;
+  -webkit-column-fill: balance;
 }
 
 .col p {
   font-size: 1.25vw;
+  margin: 0;
+  padding: 1vw;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
