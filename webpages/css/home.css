@@ -111,18 +111,13 @@ body {
     display: block;
   }
 
-  .topview::after {
-    background-image: url("../../images/stonewall_mobile.jpg");
-    background-position: center center;
-  }
-
   .midview {
     display: block;
   }
 
   iframe {
-    width: 375px;
-    height: 375px;
+    width: 200px;
+    height: 200px;
   }
 
 }
