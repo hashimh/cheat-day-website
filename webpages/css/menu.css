@@ -136,6 +136,7 @@ body {
   column-fill: balance;
   -moz-column-fill: balance;
   -webkit-column-fill: balance;
+  color: white;
 }
 
 .col p {

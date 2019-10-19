@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
       let current = document.getElementsByClassName("active_a");
       current[0].className = current[0].className.replace(" active_a", "");
       this.className += " active_a";
+
+      // Scroll into view what has been clicked
+      let div = document.getElementsByName(this.innerHTML)
+      div[0].scrollIntoView({behavior: 'smooth'});
     });
   }
 });
