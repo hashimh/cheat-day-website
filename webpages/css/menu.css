@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
 }
 
+/* TOP NAV BAR CSS */
 
 .topnav {
   background-color: #333;
@@ -43,6 +44,42 @@ body {
   display: none;
 }
 
+/* SIDE NAV BAR CSS */
+
+.sidenav {
+  width: 10vw;
+  position: fixed;
+  z-index: 1;
+  top: 9.5vh;
+  right: 0;
+  overflow-x: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin: 0 0 10px 0;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 25px;
+  margin-top: 5vh;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #333;
+}
+
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.sidenav a.active_a {
+  background-color: #ddd;
+  color: black;
+}
 /* MENU ITEM CSS */
 
 
@@ -56,7 +93,7 @@ body {
   margin-left: 40vw;
   margin-right: 40vw;
   padding: 2vh;
-  background-color: rgb(47,79,79, 0.85);
+  background-color: #333;
   text-align: center;
   border-radius: 1vh;
   font-size: 2vw;
@@ -64,19 +101,19 @@ body {
 }
 
 #menuitem1 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)), url("../../images/burgermenu.jpg");
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/burgermenu.jpg");
 }
 
 #menuitem2 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)), url("../../images/pizzamenu.jpg");
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/pizzamenu.jpg");
 }
 
 #menuitem3 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)), url("../../images/kebabmenu.jpg");
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/kebabmenu.jpg");
 }
 
 #menuitem4 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)), url("../../images/sidesmenu.jpeg");
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/sidesmenu.jpeg");
 
 }
 
@@ -88,11 +125,11 @@ body {
 }
 
 .col {
-  background-color: rgba(47,79,79,0.95);
+  background-color: #333;
   border-radius: 1vh;
-  height: 60vh;
-  margin-left: 4vw;
-  margin-right: 4vw;
+  height: 75vh;
+  margin-left: 6vw;
+  margin-right: 15vw;
   margin-top: 4vh;
   padding: 0.5vw;
   column-count: 2;
@@ -115,6 +152,10 @@ body {
     float: right;
     display: block;
   }
+
+  .sidenav {padding: 5px;}
+  .sidenav a {font-size: 15px;}
+
 
 }
 
