@@ -9,6 +9,8 @@ function navFunction() {
   }
 }
 
+
+
 // FUNCTION TO ALTER CLASSNAMES OF SIDENAV ELEMENTS FOR RESPONSIVENESS //
 document.addEventListener("DOMContentLoaded", function() {
   let links = document.getElementsByClassName("side_a");
@@ -34,7 +36,16 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+
 // FUNCTION TO RESET PAGE LOCATION ON REFRESH
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
+}
+
+
+
+// FUNCTION FOR DOWN ARROW ON HOMEPAGE
+function homepageDown() {
+  document.querySelector('.midview').scrollIntoView({behavior: 'smooth'});
 }

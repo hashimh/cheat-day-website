@@ -27,7 +27,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5vw;
 }
 
 .topnav a:hover {
@@ -47,27 +47,24 @@ body {
 /* SIDE NAV BAR CSS */
 
 .sidenav {
-  width: 10vw;
+  width: 11vw;
   position: fixed;
   z-index: 1;
-  top: 9.5vh;
+  padding-top: 9vh;
   right: 0;
   overflow-x: hidden;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  margin: 0 0 10px 0;
 }
 
 .sidenav a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 17px;
   color: white;
   display: block;
   text-align: center;
   padding: 25px;
   margin-top: 5vh;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   background-color: #333;
 }
 
@@ -79,6 +76,7 @@ body {
 .sidenav a.active_a {
   background-color: #ddd;
   color: black;
+  text-decoration: underline;
 }
 /* MENU ITEM CSS */
 
@@ -87,42 +85,34 @@ body {
   height: 100vh;
   padding-top: 10vh;
   text-align: center;
-}
-
-.menuitem h1 {
-  margin-left: 40vw;
-  margin-right: 40vw;
-  padding: 2vh;
-  background-color: #333;
-  text-align: center;
-  border-radius: 1vh;
-  font-size: 2vw;
-  margin-top: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #menuitem1 {
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/burgermenu.jpg");
 }
 
-#menuitem2 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/pizzamenu.jpg");
-}
-
 #menuitem3 {
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/kebabmenu.jpg");
 }
 
-#menuitem4 {
+#menuitem5 {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/pizzamenu.jpg");
+}
+
+#menuitem6 {
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/sidesmenu.jpeg");
-
 }
 
-#menuitem1, #menuitem2, #menuitem3, #menuitem4 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* CSS FOR INDIVIDUAL MENUS */
+
+.col-title { grid-area: title; }
+.col-col1 { grid-area: col1; }
+.col-col2 { grid-area: col2; }
+.col-footer { grid-area: footer; font-style: italic; }
 
 .col {
   background-color: rgba(51,51,51,0.95);
@@ -132,17 +122,25 @@ body {
   margin-right: 15vw;
   margin-top: 4vh;
   padding: 0.5vw;
-  column-count: 2;
-  column-fill: balance;
-  -moz-column-fill: balance;
-  -webkit-column-fill: balance;
   color: white;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 3fr 0.25fr;
+  grid-template-areas:
+    'title title'
+    'col1 col2'
+    'footer footer';
+
+}
+
+.col-title {
+  font-style: italic;
+  padding-top: 4vh;
 }
 
 .col p {
-  font-size: 1.25vw;
   margin: 0;
-  padding: 1vw;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

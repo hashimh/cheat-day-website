@@ -28,7 +28,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5vw;
 }
 
 .topnav a:hover {
@@ -66,21 +66,6 @@ body {
   padding-bottom: 5vw;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
 Show the link that contains should open and close the topnav (.icon) */
