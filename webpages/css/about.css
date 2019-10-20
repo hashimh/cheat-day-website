@@ -77,10 +77,30 @@ Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(.active) {display: none;}
   .topnav a.active {background-color: #333;}
-
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  .topnav a.icon.active {
+    background-color: #333;
+    color: white;
+    border: none;
+  }
+  .topnav a.icon:hover {
+    background-color: #333;
+    color: white;
+    border: none;
+  }
+  .topnav a {
+    font-size: 4vw;
+    padding: 4vw 4.5vw;
+  }
+  .topnav a.active {
+    border: none;
+    font-weight: bold;
+  }
+  .topnave a:hover {
+    border-left: 2px solid white;
   }
 
 }
