@@ -4,4 +4,4 @@ When saving:
 - (if commited from github desktop, start here)
 - heroku git:remote -a feast-website
 - git push heroku master
-- heroku open
+- (heroku open)

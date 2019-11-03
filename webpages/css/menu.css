@@ -56,7 +56,7 @@ body {
   width: 11vw;
   position: fixed;
   z-index: 1;
-  padding-top: 9vh;
+  padding-top: 11vh;
   right: 0;
   overflow-x: hidden;
 }
@@ -68,7 +68,7 @@ body {
   display: block;
   text-align: center;
   padding: 25px;
-  margin-top: 5vh;
+  margin-top: 3vh;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   background-color: #333;
@@ -95,22 +95,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#menuitem1 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/burgermenu.jpg");
-}
-
-#menuitem3 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/kebabmenu.jpg");
-}
-
-#menuitem5 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/pizzamenu.jpg");
-}
-
-#menuitem6 {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)), url("../../images/sidesmenu.jpeg");
 }
 
 /* CSS FOR INDIVIDUAL MENUS */
@@ -147,6 +131,10 @@ body {
 
 .col p {
   margin: 0;
+}
+
+#pizza-prices {
+  font-size: 19px;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
