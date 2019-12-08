@@ -1,0 +1,68 @@
+When saving:
+- git add .
+- git commit -m "some notes here"
+- (if commited from github desktop, start here)
+- heroku git:remote -a feast-website
+- git push heroku master
+- (heroku open)
+
+
+--------------------------------------------------------------------------------
+------------------------------------ TO DO -------------------------------------
+--------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------
+------------------------- HOME PAGE -------------------------
+-------------------------------------------------------------
+
+Mobile:
+- // complete //
+
+Tablet:
+- create
+
+Desktop:
+-
+
+General
+- get background image
+- fill in some info text, change header
+
+
+
+--------------------------------------------------------
+------------------------- MENU -------------------------
+--------------------------------------------------------
+
+Mobile:
+- make menu font bigger / less padding/margin
+- make a dropdown list / initial buttons showing all sub menus
+
+Tablet:
+- create
+
+Desktop:
+-
+
+General:
+- get background images
+- adjust according to new menu
+
+
+---------------------------------------------------------
+------------------------- ABOUT -------------------------
+---------------------------------------------------------
+
+Mobile:
+- separate sub sections of content into full length pages
+
+Tablet:
+- create
+
+Desktop:
+- style
+
+General:
+- fill in filler text
