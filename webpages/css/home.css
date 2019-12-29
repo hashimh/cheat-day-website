@@ -160,7 +160,9 @@ iframe {
   left: 0;
 }
 
-
+#mobilePara {
+  display: none;
+}
 
 /* Mobile Devices (Portait) */
 
@@ -209,19 +211,47 @@ iframe {
     display: block;
     text-align: center;
     font-size: 17px;
+    height: 200vh;
+  }
+
+  .midtext {
+    height: 100vh;
+    border-bottom: 5px solid black;
+  }
+
+  .midtext h1 {
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+  }
+
+  .midmap {
+    height: 90vh;
+    bottom: 0;
+  }
+
+  .midmap > * {
+    padding-top: 8vh;
+  }
+
+  .midmap > h1 {
+    padding-bottom: 4vh;
+  }
+
+  .midmap > p {
+    padding-top: 1vh;
   }
 
   #span1 {
     display: none;
   }
 
+  #mobilePara {
+    display: inline;
+  }
+
   .arrow span {
     width: 15px;
     height: 15px;
-  }
-
-  .midview div {
-    height: 71vh;
   }
 
   #frame-container {
@@ -242,8 +272,50 @@ iframe {
     .midview {
       display: block;
       text-align: center;
+      height: 200vh;
+
     }
     .midmap {
       height: 62vh;
     }
+
+    .midtext {
+      height: 100vh;
+      border-bottom: 5px solid black;
+    }
+
+    .midtext h1 {
+      padding-top: 8vh;
+      padding-bottom: 2vh;
+    }
+
+    .midmap {
+      height: 90vh;
+      bottom: 0;
+    }
+
+    .midmap > * {
+      padding-top: 8vh;
+    }
+
+    .midmap > h1 {
+      padding-bottom: 4vh;
+    }
+
+    .midmap > p {
+      padding-top: 1vh;
+    }
+
+    #frame-container {
+      height: 60vh;
+    }
+
+    #span1 {
+      display: none;
+    }
+
+    #mobilePara {
+      display: inline;
+    }
+
 }
