@@ -64,11 +64,11 @@ body {
 
 .sidenav a {
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.2vw;
   color: white;
   display: block;
   text-align: center;
-  padding: 1.3vw;
+  padding: 1vw;
   margin-top: 3vh;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -116,6 +116,7 @@ body {
   margin-top: 4vh;
   padding: 0.5vw;
   color: white;
+  font-size: 1vw;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -138,6 +139,14 @@ body {
 
 #pizza-prices {
   font-size: 19px;
+}
+
+.col-footer {
+  bottom: 0;
+}
+
+#menuitem8 {
+  font-size: 0.75vw;
 }
 
 
@@ -189,14 +198,27 @@ body {
   .col {
     margin-left: 6vw;
     margin-right: 6vw;
-    display: block;
-    font-size: 10px;
+    font-size: 11px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.1fr;
+    grid-template-areas:
+      'title'
+      'col1'
+      'col2'
+      'footer';
   }
 
-  .col-footer p {
-    position: relative;
-    bottom: 0;
-  }
+.col-title {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.col-footer p {
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  bottom: 0;
+}
 
   .menuitem {
     background-image: none!important;
@@ -211,21 +233,15 @@ body {
 
 /* Tablet Devices (Portait and Landscape) */
 @media only screen
-  and (min-width: 768px)
+  and (min-width: 600px)
   and (max-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
     .topnav a {
-      font-size: 3vw;
-      padding: 3vw 3.5vw;
+      font-size: 2vw;
+      padding: 2vw 2.5vw;
     }
     .sidenav {
       display: none;
-    }
-
-    .col {
-      margin-left: 6vw;
-      margin-right: 6vw;
-      display: block;
     }
 
     .col-footer p {
@@ -238,7 +254,32 @@ body {
     }
 
     .col {
+    }
+
+    .col {
+      margin-left: 6vw;
+      margin-right: 6vw;
+      font-size: 2vw;
       height: 80vh;
       overflow: auto;
+
+      /* grid-template-columns: 1fr; */
+      /* grid-template-rows: 1fr 1fr 1fr 0.1fr;
+      grid-template-areas:
+        'title'
+        'col1'
+        'col2'
+        'footer'; */
     }
+
+  .col-title {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .col-footer p {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    bottom: 0;
+  }
 }
