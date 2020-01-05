@@ -237,8 +237,8 @@ body {
   and (max-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
     .topnav a {
-      font-size: 2vw;
-      padding: 2vw 2.5vw;
+      font-size: 3vw;
+      padding: 3vw 3.5vw;
     }
     .sidenav {
       display: none;

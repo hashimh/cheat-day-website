@@ -19,6 +19,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .topnav a {
@@ -62,36 +63,56 @@ th {
 }
 
 img {
-  z-index: -5;
+  z-index: 1;
   position: relative;
   opacity: 0.85;
   width: 60%;
   border-radius: 10px;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
 .about-block {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+  height: 100vh;
 }
+
 #about-block-1 {
-  padding-top: 10vh;
+  padding-top: 15vh;
   font-size: 1.3em;
+  background-color: rgb(100,100,100);
+  width: 100%;
 }
 #about-block-1 > h1 {
-  font-size: 50px;
+  font-size: 2.5em;
 }
 #about-block-1 > p {
   line-height: 1.5;
-  width: 80%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
-#about-block-2 > table {
-  font-size: 1.3em;
+
+#about-block-img {
+  width: 100%;
+  background-color: rgb(105,105,105);
 }
 #about-block-img {
   padding-bottom: 5vh;
+}
+#about-imgs {
+  z-index: 10;
+}
+
+#about-block-2 {
+  background-color: rgb(100,100,100);
+  width: 100%;
+}
+#about-block-2 > table {
+  font-size: 1.3em;
+  z-index: 1;
 }
 #about-block-3 {
   width: 100vw;
@@ -157,16 +178,12 @@ Show the link that contains should open and close the topnav (.icon) */
     padding-right: 10vw;
     padding-bottom: 5vw;
     font-size: 14px;
+    width: 100%;
+
   }
 
-  #about-block-img {
-    display: none;
-  }
-  .about-block {
-    width: 100%;
-  }
   #about-block-1 {
-    padding-top: 20vw;
+    padding-top: 40vw;
     font-size: 1em;
   }
   #about-block-1 > h1 {
@@ -175,10 +192,22 @@ Show the link that contains should open and close the topnav (.icon) */
   #about-block-1 > p {
     line-height: 1.2;
     width: 100%;
+    padding-top: 2vh;
   }
 
+  #about-block-img {
+    display: none;
+    background-color: rgb(105,105,105);
+  }
+
+
   #about-block-2 {
-    padding-top: 0;
+    padding-top: 40vw;
+  }
+
+  #about-block-3 {
+    padding-top: 40vw;
+    background-color: rgb(105,105,105);
   }
 
 }
@@ -191,5 +220,44 @@ Show the link that contains should open and close the topnav (.icon) */
     .topnav a {
       font-size: 3vw;
       padding: 3vw 3.5vw;
+    }
+
+    .about-block {
+      padding-left: 10vw;
+      padding-right: 10vw;
+      padding-bottom: 5vw;
+      width: 100%;
+
+    }
+
+    #about-block-1 {
+      padding-top: 25vw;
+      font-size: 1em;
+    }
+    #about-block-1 > h1 {
+      font-size: 4vh;
+    }
+    #about-block-1 > p {
+      line-height: 1.2;
+      width: 100%;
+      padding-top: 2vh;
+      font-size: 2.5vh;
+    }
+
+    #about-block-img {
+      display: none;
+      background-color: rgb(105,105,105);
+    }
+
+
+    #about-block-2 {
+      padding-top: 40vw;
+      font-size: 2vh;
+    }
+
+    #about-block-3 {
+      padding-top: 40vw;
+      background-color: rgb(105,105,105);
+      font-size: 2.5vh;
     }
 }
