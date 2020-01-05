@@ -49,3 +49,11 @@ window.onbeforeunload = function () {
 function homepageDown() {
   document.querySelector('.midview').scrollIntoView({behavior: 'smooth'});
 }
+
+function aboutDown() {
+  document.querySelector('#about-block-2').scrollIntoView({behavior: 'smooth'});
+}
+
+function aboutDown2() {
+  document.querySelector('#about-block-3').scrollIntoView({behavior: 'smooth'});
+}
