@@ -63,11 +63,11 @@ th {
 }
 
 img {
+  border-radius: 30vh;
   z-index: 1;
   position: relative;
   opacity: 0.85;
   width: 60%;
-  border-radius: 10px;
   padding-top: 20vh;
   padding-bottom: 20vh;
 }
@@ -82,9 +82,27 @@ img {
 #about-block-1 {
   padding-top: 25vh;
   font-size: 3vh;
-  background-color: rgb(100,100,100);
   width: 100%;
+  font-weight: bold;
 }
+
+#about-block-1::after {
+  content: "";
+  background: url("../../images/woodwallpaper.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+}
+
 #about-block-1 > h1 {
   font-size: 5vh;
 }
@@ -97,7 +115,6 @@ img {
 
 #about-block-img {
   width: 100%;
-  background-color: rgb(105,105,105);
 }
 #about-block-img {
   padding-bottom: 5vh;
@@ -107,10 +124,10 @@ img {
 }
 
 #about-block-2 {
-  background-color: rgb(100,100,100);
   width: 100%;
   border-top: 10vh double #333;
   border-bottom: 10vh double #333;
+  font-size: 2.5vh;
 }
 #about-block-2 > table {
   font-size: 1.3em;
