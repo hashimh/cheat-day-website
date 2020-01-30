@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(105,105,105);
+  background-color: rgb(105, 105, 105);
   display: block;
   margin: 0;
   margin-top: 0;
@@ -77,16 +77,16 @@ body {
   padding-top: 40vh;
   width: 100%;
   text-align: center;
-  font-size: 8vh
+  font-size: 8vh;
 }
 
 /* FANCY ARROW CSS */
 
 .downArrow {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .upArrow {
@@ -97,35 +97,34 @@ body {
 }
 
 .arrow span {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #333;
-    border-right: 5px solid #333;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #333;
+  border-right: 5px solid #333;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
 }
 .arrow span:nth-child(2) {
-    animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 .arrow span:nth-child(3) {
-    animation-delay: -0.4s;
+  animation-delay: -0.4s;
 }
 @keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
-
 
 /* MID VIEW CSS */
 
@@ -140,14 +139,12 @@ body {
   padding-bottom: 0;
 }
 
-
-
 .midview h1 {
   font-size: 4vh;
 }
 
 .midview p {
-  font-size: 2vh;
+  font-size: 2.5vh;
 }
 
 #frame-container {
@@ -170,8 +167,12 @@ iframe {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media (max-width: 600px) {
-  .topnav a:not(.active) {display: none;}
-  .topnav a.active {background-color: #333;}
+  .topnav a:not(.active) {
+    display: none;
+  }
+  .topnav a.active {
+    background-color: #333;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -197,7 +198,10 @@ iframe {
   .topnave a:hover {
     border-left: 2px solid white;
   }
-  .topnav.responsive {position: fixed; width: 100%;}
+  .topnav.responsive {
+    position: fixed;
+    width: 100%;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -259,65 +263,59 @@ iframe {
   #frame-container {
     height: 50vh;
   }
-
 }
 
 /* Tablet Devices (Portait and Landscape) */
-@media only screen
-  and (min-width: 768px)
-  and (max-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .topnav a {
-      font-size: 3vw;
-      padding: 3vw 3.5vw;
-    }
-    .midview {
-      display: block;
-      text-align: center;
-      height: 200vh;
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .topnav a {
+    font-size: 3vw;
+    padding: 3vw 3.5vw;
+  }
+  .midview {
+    display: block;
+    text-align: center;
+    height: 200vh;
+  }
+  .midmap {
+    height: 62vh;
+  }
 
-    }
-    .midmap {
-      height: 62vh;
-    }
+  .midtext {
+    height: 100vh;
+    border-bottom: 5px solid black;
+  }
 
-    .midtext {
-      height: 100vh;
-      border-bottom: 5px solid black;
-    }
+  .midtext h1 {
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+  }
 
-    .midtext h1 {
-      padding-top: 8vh;
-      padding-bottom: 2vh;
-    }
+  .midmap {
+    height: 90vh;
+    bottom: 0;
+  }
 
-    .midmap {
-      height: 90vh;
-      bottom: 0;
-    }
+  .midmap > * {
+    padding-top: 8vh;
+  }
 
-    .midmap > * {
-      padding-top: 8vh;
-    }
+  .midmap > h1 {
+    padding-bottom: 4vh;
+  }
 
-    .midmap > h1 {
-      padding-bottom: 4vh;
-    }
+  .midmap > p {
+    padding-top: 1vh;
+  }
 
-    .midmap > p {
-      padding-top: 1vh;
-    }
+  #frame-container {
+    height: 60vh;
+  }
 
-    #frame-container {
-      height: 60vh;
-    }
+  #span1 {
+    display: none;
+  }
 
-    #span1 {
-      display: none;
-    }
-
-    #mobilePara {
-      display: inline;
-    }
-
+  #mobilePara {
+    display: inline;
+  }
 }

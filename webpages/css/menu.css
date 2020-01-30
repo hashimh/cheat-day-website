@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(105,105,105);
+  background-color: rgb(105, 105, 105);
   display: block;
   margin: 0;
   margin-top: 0;
@@ -50,7 +50,6 @@ body {
   display: none;
 }
 
-
 /* SIDE NAV BAR CSS */
 
 .sidenav {
@@ -76,7 +75,7 @@ body {
 }
 
 .sidenav a:hover {
-  background-color: rgb(60,60,60);
+  background-color: rgb(60, 60, 60);
   color: white;
 }
 
@@ -86,9 +85,7 @@ body {
   text-decoration: underline;
 }
 
-
 /* MENU ITEM CSS */
-
 
 .menuitem {
   height: 100vh;
@@ -102,13 +99,23 @@ body {
 
 /* CSS FOR INDIVIDUAL MENUS */
 
-.col-title { grid-area: title; }
-.col-col1 { grid-area: col1; }
-.col-col2 { grid-area: col2; }
-.col-footer { grid-area: footer; font-style: italic; }
+.col-title {
+  grid-area: title;
+}
+.col-col1 {
+  grid-area: col1;
+}
+.col-col2 {
+  grid-area: col2;
+}
+.col-footer {
+  grid-area: footer;
+  font-style: italic;
+  margin-bottom: 1vh;
+}
 
 .col {
-  background-color: rgba(51,51,51,0.95);
+  background-color: rgba(51, 51, 51, 0.95);
   border-radius: 1vh;
   height: 75vh;
   margin-left: 6vw;
@@ -122,10 +129,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 3fr 0.1fr;
   grid-template-areas:
-    'title title'
-    'col1 col2'
-    'footer footer';
-
+    "title title"
+    "col1 col2"
+    "footer footer";
 }
 
 .col-title {
@@ -149,11 +155,14 @@ body {
   font-size: 0.75vw;
 }
 
-
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(.active) {display: none;}
-  .topnav a.active {background-color: #333;}
+  .topnav a:not(.active) {
+    display: none;
+  }
+  .topnav a.active {
+    background-color: #333;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -179,7 +188,10 @@ body {
   .topnave a:hover {
     border-left: 2px solid white;
   }
-  .topnav.responsive {position: fixed; width: 100%;}
+  .topnav.responsive {
+    position: fixed;
+    width: 100%;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -203,74 +215,67 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 0.1fr;
     grid-template-areas:
-      'title'
-      'col1'
-      'col2'
-      'footer';
+      "title"
+      "col1"
+      "col2"
+      "footer";
   }
 
-.col-title {
-  padding-left: 10vw;
-  padding-right: 10vw;
-}
+  .col-title {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
 
-.col-footer p {
-  padding-top: 5vh;
-  padding-bottom: 2vh;
-  bottom: 0;
-}
+  .col-footer p {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    bottom: 0;
+  }
 
   .menuitem {
-    background-image: none!important;
+    background-image: none !important;
   }
 
   .col {
     height: 80vh;
     overflow: auto;
   }
-
 }
 
 /* Tablet Devices (Portait and Landscape) */
-@media only screen
-  and (min-width: 600px)
-  and (max-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .topnav a {
-      font-size: 3vw;
-      padding: 3vw 3.5vw;
-    }
-    .sidenav {
-      display: none;
-    }
+@media only screen and (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .topnav a {
+    font-size: 3vw;
+    padding: 3vw 3.5vw;
+  }
+  .sidenav {
+    display: none;
+  }
 
-    .col-footer p {
-      position: relative;
-      bottom: 0;
-    }
+  .col-footer p {
+    position: relative;
+    bottom: 0;
+  }
 
-    .menuitem {
-      background-image: none!important;
-    }
+  .menuitem {
+    background-image: none !important;
+  }
 
-    .col {
-    }
+  .col {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    font-size: 2vw;
+    height: 80vh;
+    overflow: auto;
 
-    .col {
-      margin-left: 6vw;
-      margin-right: 6vw;
-      font-size: 2vw;
-      height: 80vh;
-      overflow: auto;
-
-      /* grid-template-columns: 1fr; */
-      /* grid-template-rows: 1fr 1fr 1fr 0.1fr;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr 1fr 1fr 0.1fr;
       grid-template-areas:
         'title'
         'col1'
         'col2'
         'footer'; */
-    }
+  }
 
   .col-title {
     padding-left: 10vw;

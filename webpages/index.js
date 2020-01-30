@@ -9,18 +9,16 @@ function navFunction() {
   }
 }
 
-
-
 // FUNCTION TO ALTER CLASSNAMES OF SIDENAV ELEMENTS FOR RESPONSIVENESS //
 document.addEventListener("DOMContentLoaded", function() {
   let links = document.getElementsByClassName("side_a");
-  console.log(links)
+  console.log(links);
 
   // Add event listener for clicking links
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener("click", function() {
-      let div = document.getElementsByName(this.innerHTML)
-      div[0].scrollIntoView({behavior: 'smooth'});
+      let div = document.getElementsByName(this.innerHTML);
+      div[0].scrollIntoView({ behavior: "smooth" });
     });
   }
 
@@ -30,30 +28,30 @@ document.addEventListener("DOMContentLoaded", function() {
     let index = divs.length;
     while (--index && window.scrollY + 100 < divs[index].offsetTop) {}
     for (let i = 0; i < links.length; i++) {
-      links[i].classList.remove('active_a');
-      links[index].classList.add('active_a');
+      links[i].classList.remove("active_a");
+      links[index].classList.add("active_a");
     }
   });
 });
 
-
-
 // FUNCTION TO RESET PAGE LOCATION ON REFRESH
-window.onbeforeunload = function () {
+window.onbeforeunload = function() {
   window.scrollTo(0, 0);
-}
-
-
+};
 
 // FUNCTION FOR DOWN ARROW ON HOMEPAGE
 function homepageDown() {
-  document.querySelector('.midview').scrollIntoView({behavior: 'smooth'});
+  document.querySelector(".midview").scrollIntoView({ behavior: "smooth" });
 }
 
 function aboutDown() {
-  document.querySelector('#about-block-2').scrollIntoView({behavior: 'smooth'});
+  document
+    .querySelector("#about-block-2")
+    .scrollIntoView({ behavior: "smooth" });
 }
 
 function aboutDown2() {
-  document.querySelector('#about-block-3').scrollIntoView({behavior: 'smooth'});
+  document
+    .querySelector("#about-block-3")
+    .scrollIntoView({ behavior: "smooth" });
 }
