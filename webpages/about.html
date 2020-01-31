@@ -17,7 +17,7 @@
     <title>cheat day</title>
   </head>
 
-  <body>
+  <body onload="showSlides()">
     <div class="topnav" id="myTopNav">
       <a href="home.html">home</a>
       <a href="menu.html">menu</a>
@@ -50,7 +50,26 @@
       </div>
 
       <div class="about-block" id="about-block-img">
-        <h1>picture slideshow</h1>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="../images/burgermenu.jpg" style="width:100% " />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="../images/kebabmenu.jpg" style="width:100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="../images/pizzamenu.jpg" style="width:100%" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
       </div>
 
       <div class="about-block" id="about-block-2">
