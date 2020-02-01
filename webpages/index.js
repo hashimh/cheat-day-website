@@ -12,7 +12,6 @@ function navFunction() {
 // FUNCTION TO ALTER CLASSNAMES OF SIDENAV ELEMENTS FOR RESPONSIVENESS //
 document.addEventListener("DOMContentLoaded", function() {
   let links = document.getElementsByClassName("side_a");
-  console.log(links);
 
   // Add event listener for clicking links
   for (let i = 0; i < links.length; i++) {
@@ -72,6 +71,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+  console.log(slides);
   if (n > slides.length) {
     slideIndex = 1;
   }

@@ -1,5 +1,6 @@
 /* TODO:
   - scrollable sub menues: change so that the title, heading and footer are fixed.
+  - make font bigger for desktop sized menues
 */
 
 body {
@@ -230,6 +231,10 @@ body {
       "footer";
   }
 
+  .col p {
+    width: 75vw;
+  }
+
   .col-title {
     padding-left: 10vw;
     padding-right: 10vw;
@@ -277,13 +282,13 @@ body {
     height: 80vh;
     overflow: auto;
 
-    /* grid-template-columns: 1fr; */
-    /* grid-template-rows: 1fr 1fr 1fr 0.1fr;
-      grid-template-areas:
-        'title'
-        'col1'
-        'col2'
-        'footer'; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.1fr;
+    grid-template-areas:
+      "title"
+      "col1"
+      "col2"
+      "footer";
   }
 
   .col-title {
