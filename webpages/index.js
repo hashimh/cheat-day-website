@@ -100,3 +100,32 @@ function modalClosed() {
   let body = document.body;
   body.classList.remove("no-scroll");
 }
+
+// TODO:
+//  - send email attributes to server via nodemailer
+//  - Validate:
+//      - name
+//      - email
+//      - recaptcha
+
+function emailValidate(email) {
+  // validate email
+  let emailIn = document.getElementById("userEmail");
+  if (isEmail(email) == true) {
+    // If good change background to green
+    emailIn.style.border = "4px solid green";
+  } else if (emailIn.value == "") {
+    emailIn.style.border = "2px solid rgb(192, 191, 191)";
+  } else {
+    emailIn.style.border = "4px solid red";
+  }
+}
+
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if (!regex.test(email)) {
+    return false;
+  } else {
+    return true;
+  }
+}

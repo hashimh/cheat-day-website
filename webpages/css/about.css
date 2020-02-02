@@ -2,7 +2,7 @@
   - change position of gallery next and previous buttons to side, height 100%
   - responsive modal:
       - width, height and padding with vh/vw
-
+      - email input responsive text up to a certain size
 */
 
 body {
@@ -285,14 +285,13 @@ th {
   width: 60%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  grid-template-rows: 0.1fr 2fr 1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 0.1fr;
   grid-template-areas:
-    "close close close"
-    "para para para"
-    "name message message"
-    "email message message"
-    "subject message message"
-    ". . send";
+    "para para"
+    "name message"
+    "email message"
+    "subject message"
+    ". send";
 
   overflow-y: hidden;
   }
@@ -382,6 +381,8 @@ th {
   background-color: rgb(192, 191, 191);
   border: 2px solid rgb(192, 191, 191);
   resize: none;
+  font-family: "Verdana";
+  padding: 10px;
 }
 
 textarea:focus, input:focus {

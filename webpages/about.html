@@ -141,7 +141,6 @@
 <!-- CODE FOR THE EMAIL US MODAL -->
 <div id="emailModal" class="modal">
   <div class="modalContent">
-    <!-- <a href="#close" class="close" onclick="modalClosed()">&times;</a> -->
     <div class="modalBox1">
       <h3>get in touch with us</h3>
       <p>
@@ -167,6 +166,7 @@
         type="text"
         name="userEmail"
         placeholder="your email..."
+        onchange="emailValidate(this.value)"
       />
     </div>
 
