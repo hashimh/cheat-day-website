@@ -128,9 +128,10 @@
         <a href="#" class="fa fa2 fa-instagram" title="Instagram"></a>
         <a href="#" class="fa fa2 fa-google" title="Google"></a>
         <a
-          class="fa fa2 fa-envelope"
+          href="#emailModal"
+          class="fa fa2 fa-envelope openModal"
           title="Email Us"
-          onclick="sendMessage()"
+          onclick="modalOpened()"
         ></a>
       </div>
     </div>
@@ -140,34 +141,50 @@
 <!-- CODE FOR THE EMAIL US MODAL -->
 <div id="emailModal" class="modal">
   <div class="modalContent">
-    <span class="close">&times;</span>
+    <!-- <a href="#close" class="close" onclick="modalClosed()">&times;</a> -->
     <div class="modalBox1">
       <h3>get in touch with us</h3>
       <p>
         enter your email and your feedback, questions or comments in the boxes
         below. if you have a question, it will be forwarded to the concerning
         department and we will aim to get back to you within a few working days.
+        to close this box click on the outside.
       </p>
     </div>
 
     <div class="emailModalInput modalBox2">
-      <label>your name:</label>
-      <input id="userName" type="text" name="userName" />
+      <input
+        id="userName"
+        type="text"
+        name="userName"
+        placeholder="your name..."
+      />
     </div>
 
     <div class="emailModalInput modalBox3">
-      <label>email address:</label>
-      <input id="userEmail" type="text" name="userEmail" />
+      <input
+        id="userEmail"
+        type="text"
+        name="userEmail"
+        placeholder="your email..."
+      />
     </div>
 
     <div class="emailModalInput modalBox4">
-      <label>subject:</label>
-      <input id="mailSubject" type="text" name="mailSubject" />
+      <input
+        id="mailSubject"
+        type="text"
+        name="mailSubject"
+        placeholder="message subject..."
+      />
     </div>
 
     <div class="emailModalInput modalBox5">
-      <label>message:</label>
-      <input id="mailMessage" type="text" name="mailMessage" />
+      <textarea
+        id="mailMessage"
+        name="mailMessage"
+        placeholder="type your message here..."
+      ></textarea>
     </div>
 
     <div class="modalBox6">

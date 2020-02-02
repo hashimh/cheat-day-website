@@ -1,5 +1,7 @@
 /* TODO:
   - change position of gallery next and previous buttons to side, height 100%
+  - responsive modal:
+      - width, height and padding with vh/vw
 
 */
 
@@ -244,29 +246,78 @@ th {
 
 /* MODAL CODE */
 .modal {
-  display: none;
   position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  display: grid;
+  /* justify-items: center;
+  align-items: center; */
+  pointer-events: none;
+  max-height: 0;
+  transition: max-height 500ms;
+  -webkit-transition: max-height 500ms;
+  -o-transition: max-height: 500ms;
+  overflow: hidden;
+}
+
+.modal:target {
+  max-height: 100%;
+  pointer-events: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .modalContent {
-  background-color: #717171;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #636363;
   margin: auto;
   padding: 20px;
   border: 2px solid black;
   width: 60%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
+
+  grid-template-rows: 0.1fr 2fr 1fr 1fr 1fr 0.1fr;
+  grid-template-areas:
+    "close close close"
+    "para para para"
+    "name message message"
+    "email message message"
+    "subject message message"
+    ". . send";
+
+  overflow-y: hidden;
+  }
+
+.modalBox0 {
+  grid-area: close;
+
+}
+.modalBox1 {
+  grid-area: para;
+}
+.modalBox2 {
+  grid-area: name;
+}
+.modalBox3 {
+  grid-area: email
+}
+.modalBox4 {
+  grid-area: subject;
+}
+.modalBox5 {
+  grid-area: message;
+}
+.modalBox6 {
+  grid-area: send;
 }
 
 /* Add Animation */
@@ -295,9 +346,9 @@ th {
 /* The Close Button */
 .close {
   color: black;
-  float: right;
   font-size: 28px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .close:hover,
@@ -307,15 +358,34 @@ th {
   cursor: pointer;
 }
 
-.emailModalInput {
-  display: table;
+.emailModalInput input {
   vertical-align: middle;
-  height: 50px;
+  font-size: 20px;
+  background-color: rgb(192, 191, 191);
+  border: 2px solid rgb(192, 191, 191);
+
 }
 
-.emailModalInput label {
+.modalBox2 input, .modalBox3 input, .modalBox4 input {
   padding: 10px;
+}
+
+.modalBox5 {
+  grid-row-start: 2;
+  grid-row: span 3;
+
+}
+.modalBox5 textarea {
+  height: 179.5px;
+  width: 400px;
   font-size: 20px;
+  background-color: rgb(192, 191, 191);
+  border: 2px solid rgb(192, 191, 191);
+  resize: none;
+}
+
+textarea:focus, input:focus {
+  outline: none;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").

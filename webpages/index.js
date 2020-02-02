@@ -84,16 +84,19 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-function sendMessage() {
+function modalOpened() {
+  let body = document.body;
+  body.classList.add("no-scroll");
+
   let modal = document.getElementById("emailModal");
-  let span = document.getElementsByClassName("close")[0];
-  modal.style.display = "grid";
-  span.onclick = function() {
-    modal.style.display = "none";
-  };
   window.onclick = function(e) {
     if (e.target == modal) {
-      modal.style.display = "none";
+      window.location.href = "#close";
     }
   };
+}
+
+function modalClosed() {
+  let body = document.body;
+  body.classList.remove("no-scroll");
 }
