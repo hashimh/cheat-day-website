@@ -127,8 +127,51 @@
         </p>
         <a href="#" class="fa fa2 fa-instagram" title="Instagram"></a>
         <a href="#" class="fa fa2 fa-google" title="Google"></a>
-        <a href="#" class="fa fa2 fa-envelope" title="Email Us"></a>
+        <a
+          class="fa fa2 fa-envelope"
+          title="Email Us"
+          onclick="sendMessage()"
+        ></a>
       </div>
     </div>
   </body>
 </html>
+
+<!-- CODE FOR THE EMAIL US MODAL -->
+<div id="emailModal" class="modal">
+  <div class="modalContent">
+    <span class="close">&times;</span>
+    <div class="modalBox1">
+      <h3>get in touch with us</h3>
+      <p>
+        enter your email and your feedback, questions or comments in the boxes
+        below. if you have a question, it will be forwarded to the concerning
+        department and we will aim to get back to you within a few working days.
+      </p>
+    </div>
+
+    <div class="emailModalInput modalBox2">
+      <label>your name:</label>
+      <input id="userName" type="text" name="userName" />
+    </div>
+
+    <div class="emailModalInput modalBox3">
+      <label>email address:</label>
+      <input id="userEmail" type="text" name="userEmail" />
+    </div>
+
+    <div class="emailModalInput modalBox4">
+      <label>subject:</label>
+      <input id="mailSubject" type="text" name="mailSubject" />
+    </div>
+
+    <div class="emailModalInput modalBox5">
+      <label>message:</label>
+      <input id="mailMessage" type="text" name="mailMessage" />
+    </div>
+
+    <div class="modalBox6">
+      <input id="sendMessage" type="button" name="sendBtn" value="send" />
+    </div>
+  </div>
+</div>

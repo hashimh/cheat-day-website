@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "serve": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,6 @@
   "homepage": "https://github.com/hashimh/FeastWebsite#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^1.19.4"
+    "nodemailer": "^6.4.2"
   }
 }
