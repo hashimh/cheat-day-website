@@ -1,8 +1,5 @@
 /* TODO:
   - change position of gallery next and previous buttons to side, height 100%
-  - responsive modal:
-      - width, height and padding with vh/vw
-      - email input responsive text up to a certain size
 */
 
 body {
@@ -253,7 +250,7 @@ th {
   height: 100%;
   overflow: auto;
   z-index: 100;
-  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: rgba(0, 0, 0, 0.1);
   display: grid;
   /* justify-items: center;
   align-items: center; */
@@ -275,33 +272,30 @@ th {
 }
 
 .modalContent {
+  height: 60%;
   display: grid;
-  justify-items: center;
-  align-items: center;
   background-color: #636363;
   margin: auto;
-  padding: 20px;
+  padding: 3vh;
   border: 2px solid black;
   width: 60%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   grid-template-rows: 2fr 1fr 1fr 1fr 0.1fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-areas:
     "para para"
     "name message"
     "email message"
     "subject message"
-    ". send";
+    "errorMsg send";
 
   overflow-y: hidden;
   }
 
-.modalBox0 {
-  grid-area: close;
-
-}
 .modalBox1 {
   grid-area: para;
+  width: 100%
 }
 .modalBox2 {
   grid-area: name;
@@ -317,6 +311,11 @@ th {
 }
 .modalBox6 {
   grid-area: send;
+  padding-left: 78.5%;
+}
+.modalBox7 {
+  grid-area: errorMsg;
+  display: none;
 }
 
 /* Add Animation */
@@ -342,26 +341,12 @@ th {
   }
 }
 
-/* The Close Button */
-.close {
-  color: black;
-  font-size: 28px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.close:hover,
-.close:focus {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .emailModalInput input {
   vertical-align: middle;
   font-size: 20px;
   background-color: rgb(192, 191, 191);
   border: 2px solid rgb(192, 191, 191);
+  width: 100%;
 
 }
 
@@ -372,11 +357,12 @@ th {
 .modalBox5 {
   grid-row-start: 2;
   grid-row: span 3;
+  padding-left: 5vw;
 
 }
 .modalBox5 textarea {
-  height: 179.5px;
-  width: 400px;
+  height: 87%;
+  width: 100%;
   font-size: 20px;
   background-color: rgb(192, 191, 191);
   border: 2px solid rgb(192, 191, 191);
@@ -387,6 +373,104 @@ th {
 
 textarea:focus, input:focus {
   outline: none;
+}
+
+.modalBox6 input {
+  border: none;
+  color: black;
+  background-color: gray;
+  padding: 1vw;
+  width: 9vw;
+  font-size: 20px;
+}
+.modalBox6 input:hover {
+  cursor: pointer;
+  background-color: rgb(192, 191, 191);
+}
+
+
+
+/* Tablet Devices (Portait and Landscape) */
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .topnav a {
+    font-size: 2.5vw;
+    padding: 2.5vw 3vw;
+  }
+
+  .about-block {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vw;
+    width: 100%;
+  }
+
+  #about-block-1 {
+    padding-top: 15vw;
+  }
+
+  #about-block-1 > h1 {
+    font-size: 4vh;
+  }
+  #about-block-1 > p {
+    line-height: 1.2;
+    width: 100%;
+    padding-top: 2vh;
+    font-size: 2.75vh;
+  }
+
+  #about-block-img {
+    display: none;
+    background-color: rgb(105, 105, 105);
+  }
+
+  #about-block-2 {
+    font-size: 2.75vh;
+  }
+
+  #about-block-3 {
+    background-color: rgb(105, 105, 105);
+    font-size: 2.75vh;
+  }
+
+  /* TABLET MODAL CODE */
+  .modalContent {
+    text-align: center;
+    overflow-y: auto;
+    height: 70vh;
+    width: 80vw;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "para"
+      "name message"
+      "email message"
+      "subject message"
+      "errorMsg send";
+  }
+  .modalContent input {
+    width: 100%;
+    padding: 1vw;
+    font-size: 2.5vh;;
+  }
+  .modalContent div {
+    padding: 10px;
+  }
+  .modalBox5 {
+    padding: 0%;
+  }
+  .modalBox6 {
+    padding: 0%;
+  }
+  .modalBox6 input {
+    padding: 2vh;
+    font-size: 25px;
+  }
+  .modalBox1 p {
+    display: none;
+  }
+  .modalBox1 h3 {
+    font-size: 3vh;
+  }
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
@@ -474,47 +558,44 @@ Show the link that contains should open and close the topnav (.icon) */
     font-size: 2.25vh;
     background-color: rgb(105, 105, 105);
   }
-}
 
-/* Tablet Devices (Portait and Landscape) */
-@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .topnav a {
-    font-size: 2.5vw;
-    padding: 2.5vw 3vw;
+  /* MOBILE MODAL CODE */
+  .modalContent {
+    text-align: center;
+    overflow-y: auto;
+    height: 80vh;
+    width: 80vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
+    grid-template-areas:
+      "para"
+      "name"
+      "email"
+      "subject"
+      "message"
+      "send";
   }
-
-  .about-block {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-bottom: 5vw;
+  .modalContent input {
     width: 100%;
+    padding: 1vw;
+    font-size: 2.5vh;;
   }
+  .modalBox5 {
+    padding: 0%;
+    grid-row-start: auto;
 
-  #about-block-1 {
-    padding-top: 15vw;
   }
-
-  #about-block-1 > h1 {
-    font-size: 4vh;
+  .modalBox6 {
+    padding: 0%;
   }
-  #about-block-1 > p {
-    line-height: 1.2;
-    width: 100%;
-    padding-top: 2vh;
-    font-size: 2.75vh;
+  .modalBox6 input {
+    padding: 2vh;
+    font-size: 25px;
   }
-
-  #about-block-img {
+  .modalBox1 p {
     display: none;
-    background-color: rgb(105, 105, 105);
   }
-
-  #about-block-2 {
-    font-size: 2.75vh;
-  }
-
-  #about-block-3 {
-    background-color: rgb(105, 105, 105);
-    font-size: 2.75vh;
+  .modalBox1 h3 {
+    font-size: 2.5vh;
   }
 }

@@ -157,6 +157,8 @@
         type="text"
         name="userName"
         placeholder="your name..."
+        onchange="nameValidate(this.value)"
+        maxlength="32"
       />
     </div>
 
@@ -176,6 +178,7 @@
         type="text"
         name="mailSubject"
         placeholder="message subject..."
+        maxlength="32"
       />
     </div>
 
@@ -189,6 +192,10 @@
 
     <div class="modalBox6">
       <input id="sendMessage" type="button" name="sendBtn" value="send" />
+    </div>
+
+    <div class="modalBox7">
+      <p>nothing to display</p>
     </div>
   </div>
 </div>

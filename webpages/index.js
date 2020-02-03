@@ -121,8 +121,19 @@ function emailValidate(email) {
   }
 }
 
+function nameValidate(name) {
+  // Ensure names have a value, and don't contain numbers
+  let regex = /^[a-zA-Z ]{2,30}$/;
+  if (!regex.test(name)) {
+    // Name does not match the regex - contains numbers etc
+    alert("invalid name");
+    let nameIn = document.getElementById("userName");
+    nameIn.value = "";
+  }
+}
+
 function isEmail(email) {
-  var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  let regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   if (!regex.test(email)) {
     return false;
   } else {
