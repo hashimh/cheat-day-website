@@ -106,14 +106,18 @@ body {
 
 .col-title {
   grid-area: title;
+  font-family: "1906 French News";
 }
 .col-col1 {
   grid-area: col1;
+  font-family: "Handlee";
 }
 .col-col2 {
   grid-area: col2;
+  font-family: "Handlee";
 }
 .col-footer {
+  font-family: "Handlee";
   grid-area: footer;
   font-style: italic;
   margin-bottom: 1vh;

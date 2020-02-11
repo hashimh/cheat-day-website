@@ -125,7 +125,12 @@
           our menu and general news. <br /><br />
           feel free to provide any feedback by sending us an email below.
         </p>
-        <a href="#" class="fa fa2 fa-instagram" title="Instagram"></a>
+        <a
+          href="https://www.instagram.com/cheatdayhw"
+          class="fa fa2 fa-instagram"
+          title="Instagram"
+          target="_blank"
+        ></a>
         <a href="#" class="fa fa2 fa-google" title="Google"></a>
         <a
           href="#emailModal"
@@ -165,10 +170,11 @@
     <div class="emailModalInput modalBox3">
       <input
         id="userEmail"
-        type="text"
+        type="email"
         name="userEmail"
         placeholder="your email..."
         onchange="emailValidate(this.value)"
+        autocomplete="new-password"
       />
     </div>
 
@@ -191,10 +197,16 @@
     </div>
 
     <div class="modalBox6">
-      <input id="sendMessage" type="button" name="sendBtn" value="send" />
+      <input
+        id="sendMessage"
+        type="button"
+        name="sendBtn"
+        value="send"
+        onclick="sendBtnClicked()"
+      />
     </div>
 
-    <div class="modalBox7">
+    <div class="modalBox7" id="errorMsg">
       <p>nothing to display</p>
     </div>
   </div>

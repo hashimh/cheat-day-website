@@ -1,6 +1,9 @@
 /* TODO:
   - change position of gallery next and previous buttons to side, height 100%
+
 */
+
+
 
 body {
   background-color: rgb(105, 105, 105);
@@ -250,7 +253,7 @@ th {
   height: 100%;
   overflow: auto;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
   display: grid;
   /* justify-items: center;
   align-items: center; */
@@ -259,7 +262,6 @@ th {
   transition: max-height 500ms;
   -webkit-transition: max-height 500ms;
   -o-transition: max-height: 500ms;
-  overflow: hidden;
 }
 
 .modal:target {
@@ -315,7 +317,7 @@ th {
 }
 .modalBox7 {
   grid-area: errorMsg;
-  display: none;
+  visibility: hidden;
 }
 
 /* Add Animation */
