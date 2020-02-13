@@ -120,15 +120,14 @@ body {
   font-family: "Handlee";
   grid-area: footer;
   font-style: italic;
-  margin-bottom: 1vh;
 }
 
 .col {
   background-color: rgba(51, 51, 51, 0.95);
   border-radius: 1vh;
   height: 75vh;
-  margin-left: 6vw;
-  margin-right: 15vw;
+  margin-left: 7vw;
+  margin-right: 18vw;
   margin-top: 4vh;
   padding: 0.5vw;
   color: white;
@@ -136,7 +135,7 @@ body {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.7fr 3fr 0.1fr;
+  grid-template-rows: 0.5fr 3fr 0.1fr;
   grid-template-areas:
     "title title"
     "col1 col2"
@@ -145,7 +144,6 @@ body {
 
 .col-title {
   font-style: italic;
-  padding-top: 2vh;
 }
 
 .col p {
@@ -155,10 +153,6 @@ body {
   text-align: center;
   width: 25vw;
   margin-bottom: 1vh;
-}
-
-#pizza-prices {
-  font-size: 19px;
 }
 
 .col-footer {
@@ -224,7 +218,7 @@ body {
   .col {
     margin-left: 6vw;
     margin-right: 6vw;
-    font-size: 11px;
+    font-size: 3vw;
 
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 0.1fr;
@@ -282,16 +276,16 @@ body {
   .col {
     margin-left: 6vw;
     margin-right: 6vw;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     height: 80vh;
     overflow: auto;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 0.1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 0.1fr;
     grid-template-areas:
       "title"
-      "col1"
-      "col2"
+      "col1 col2"
+      "col1 col2"
       "footer";
   }
 
