@@ -14,11 +14,11 @@ body {
 
 .topnav {
   background-color: #333;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .topnav a {
@@ -163,10 +163,65 @@ iframe {
   display: none;
 }
 
+/* Tablet Devices (Portait and Landscape) */
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .topnav a {
+    font-size: 3vw;
+    padding: 3vw 3.5vw;
+  }
+  .midview {
+    display: block;
+    text-align: center;
+    height: 200vh;
+  }
+  .midmap {
+    height: 62vh;
+  }
+
+  .midtext {
+    height: 100vh;
+    border-bottom: 5px solid black;
+  }
+
+  .midtext h1 {
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+  }
+
+  .midmap {
+    height: 90vh;
+    bottom: 0;
+  }
+
+  .midmap > * {
+    padding-top: 8vh;
+  }
+
+  .midmap > h1 {
+    padding-bottom: 4vh;
+  }
+
+  .midmap > p {
+    padding-top: 1vh;
+  }
+
+  #frame-container {
+    height: 60vh;
+  }
+
+  #span1 {
+    display: none;
+  }
+
+  #mobilePara {
+    display: inline;
+  }
+}
+
 /* Mobile Devices (Portait) */
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .topnav a:not(.active) {
     display: none;
   }
@@ -262,60 +317,5 @@ iframe {
 
   #frame-container {
     height: 50vh;
-  }
-}
-
-/* Tablet Devices (Portait and Landscape) */
-@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .topnav a {
-    font-size: 3vw;
-    padding: 3vw 3.5vw;
-  }
-  .midview {
-    display: block;
-    text-align: center;
-    height: 200vh;
-  }
-  .midmap {
-    height: 62vh;
-  }
-
-  .midtext {
-    height: 100vh;
-    border-bottom: 5px solid black;
-  }
-
-  .midtext h1 {
-    padding-top: 8vh;
-    padding-bottom: 2vh;
-  }
-
-  .midmap {
-    height: 90vh;
-    bottom: 0;
-  }
-
-  .midmap > * {
-    padding-top: 8vh;
-  }
-
-  .midmap > h1 {
-    padding-bottom: 4vh;
-  }
-
-  .midmap > p {
-    padding-top: 1vh;
-  }
-
-  #frame-container {
-    height: 60vh;
-  }
-
-  #span1 {
-    display: none;
-  }
-
-  #mobilePara {
-    display: inline;
   }
 }

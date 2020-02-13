@@ -3,8 +3,6 @@
 
 */
 
-
-
 body {
   background-color: rgb(105, 105, 105);
   display: block;
@@ -261,7 +259,7 @@ th {
   max-height: 0;
   transition: max-height 500ms;
   -webkit-transition: max-height 500ms;
-  -o-transition: max-height: 500ms;
+  -o-transition: max-height 500ms;
 }
 
 .modal:target {
@@ -293,17 +291,17 @@ th {
     "errorMsg send";
 
   overflow-y: hidden;
-  }
+}
 
 .modalBox1 {
   grid-area: para;
-  width: 100%
+  width: 100%;
 }
 .modalBox2 {
   grid-area: name;
 }
 .modalBox3 {
-  grid-area: email
+  grid-area: email;
 }
 .modalBox4 {
   grid-area: subject;
@@ -349,10 +347,11 @@ th {
   background-color: rgb(192, 191, 191);
   border: 2px solid rgb(192, 191, 191);
   width: 100%;
-
 }
 
-.modalBox2 input, .modalBox3 input, .modalBox4 input {
+.modalBox2 input,
+.modalBox3 input,
+.modalBox4 input {
   padding: 10px;
 }
 
@@ -360,7 +359,6 @@ th {
   grid-row-start: 2;
   grid-row: span 3;
   padding-left: 5vw;
-
 }
 .modalBox5 textarea {
   height: 87%;
@@ -373,7 +371,8 @@ th {
   padding: 10px;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: none;
 }
 
@@ -389,8 +388,6 @@ textarea:focus, input:focus {
   cursor: pointer;
   background-color: rgb(192, 191, 191);
 }
-
-
 
 /* Tablet Devices (Portait and Landscape) */
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -452,7 +449,7 @@ textarea:focus, input:focus {
   .modalContent input {
     width: 100%;
     padding: 1vw;
-    font-size: 2.5vh;;
+    font-size: 2.5vh;
   }
   .modalContent div {
     padding: 10px;
@@ -573,8 +570,8 @@ Show the link that contains should open and close the topnav (.icon) */
     overflow-y: auto;
     height: 80vh;
     width: 80vw;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
+    grid-template-columns: max-content;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 4fr 0.5fr;
     grid-template-areas:
       "para"
       "name"
@@ -586,12 +583,11 @@ Show the link that contains should open and close the topnav (.icon) */
   .modalContent input {
     width: 100%;
     padding: 1vw;
-    font-size: 2.5vh;;
+    font-size: 2.5vh;
   }
   .modalBox5 {
     padding: 0%;
     grid-row-start: auto;
-
   }
   .modalBox6 {
     padding: 0%;
