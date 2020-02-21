@@ -107,6 +107,7 @@ th {
   max-width: 60%;
   position: relative;
   margin: auto;
+  overflow: hidden;
 }
 
 /* Hide the images by default */
@@ -315,7 +316,10 @@ th {
 }
 .modalBox7 {
   grid-area: errorMsg;
-  visibility: hidden;
+}
+#errorMsg {
+  padding: 1vw;
+  margin: 0;
 }
 
 /* Add Animation */
@@ -383,6 +387,7 @@ input:focus {
   padding: 1vw;
   width: 9vw;
   font-size: 20px;
+  height: 100%;
 }
 .modalBox6 input:hover {
   cursor: pointer;

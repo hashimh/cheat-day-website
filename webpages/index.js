@@ -160,7 +160,6 @@ function isName(name) {
 }
 
 function sendBtnClicked() {
-  alert("clicked");
   // First, if things are empty, output an error message in #errorMsg
   // Then, check content of subject is > 1, and message length > 1.
   // Then, check the RECAPTCHA has authorised the user.
@@ -170,25 +169,38 @@ function sendBtnClicked() {
   let subjectIn = document.getElementById("mailSubject");
   let messageIn = document.getElementById("mailMessage");
 
+  let errorMsg = document.getElementById("errorMsg");
+  let errorDiv = document.getElementById("errorMsgDiv");
+
   console.log(nameIn.value, emailIn.value, subjectIn.value, messageIn.value);
 
-  if (isName(nameIn.value) == "true") {
-    console.log("name is good");
-    if (isEmail(emailIn.value) == "true") {
-      console.log("email is good");
-      if (subjectIn.value.length > 1) {
-        console.log("subject is good");
-        if (messageIn.value.length > 1) {
-          console.log("message is good");
-          alert("all test passed");
+  if (isName(nameIn.value) !== true) {
+    errorMsg.innerHTML = "please enter a valid name";
+    errorMsg.style.backgroundColor = "rgb(255, 105, 97)";
+  } else {
+    if (isEmail(emailIn.value) !== true) {
+      errorMsg.innerHTML = "please enter a valid email address";
+      errorMsg.style.backgroundColor = "rgb(255, 105, 97)";
+    } else {
+      if (subjectIn.value.length < 2) {
+        errorMsg.innerHTML = "please enter a valid message subject";
+        errorMsg.style.backgroundColor = "rgb(255, 105, 97)";
+      } else {
+        if (messageIn.value.length < 10) {
+          errorMsg.innerHTML = "please enter a valid message";
+          errorMsg.style.backgroundColor = "rgb(255, 105, 97)";
+        } else {
+          errorMsg.innerHTML = "";
+          errorMsg.style.backgroundColor = "#636363";
         }
       }
     }
   }
 }
 
-// window.addEventListener("load", function() {
-//   document
-//     .getElementById("sendMessage")
-//     .addEventListener("click", sendBtnClicked);
-// });
+// function onSubmit(token) {
+//   document.getElementById("demo-form").submit();
+// }
+
+// SITE KEY: 6LeeCtsUAAAAAO10B_s_wC-r1gOQRdpXBCTypPMp
+// SECRET KEY: 6LeeCtsUAAAAAHyh1Zr7OZKE6o8hq54jq5OwQa2M
