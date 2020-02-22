@@ -188,8 +188,6 @@ async function sendBtnClicked() {
   let errorMsg = document.getElementById("errorMsg");
   let errorDiv = document.getElementById("errorMsgDiv");
 
-  console.log(nameIn.value, emailIn.value, subjectIn.value, messageIn.value);
-
   if (isName(nameIn.value) !== true) {
     errorMsg.innerHTML = "please enter a valid name";
   } else {
@@ -212,8 +210,6 @@ async function sendBtnClicked() {
               method: "POST"
             };
 
-            console.log("nameIn value:", nameIn.value);
-
             let url =
               "/api/sendMail" +
               "?name=" +
@@ -233,16 +229,20 @@ async function sendBtnClicked() {
             } else {
               console.log("Successful /api/sendMail call.");
             }
-            alert("message sent to server");
+
             // Clear modal content and close modal
             nameIn.innerHTML = "";
             emailIn.innerHTML = "";
             subjectIn.innerHTML = "";
             messageIn.innerHTML = "";
 
+            errorMessage.innerHTML =
+              "your feedback has been submitted, please expect questions to be answered within a week.";
+            errorDiv.style.backgroundColor = "#FDFD96";
+
+            setTimeout("", 5000);
             window.location.href = "#close";
             let body = document.body;
-
             body.classList.remove("no-scroll");
           }
         }
@@ -250,10 +250,3 @@ async function sendBtnClicked() {
     }
   }
 }
-
-// function onSubmit(token) {
-//   document.getElementById("demo-form").submit();
-// }
-
-// SITE KEY: 6Le2QdsUAAAAADkXa6LUrknHARcIPGMqreb4ZVsW
-// SECRET KEY: 6Le2QdsUAAAAADrXA3u5vylzloGLd0vT1_3HxZHE

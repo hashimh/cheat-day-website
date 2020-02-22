@@ -45,19 +45,20 @@ function sendMail(req, res) {
     from: req.query.sendmail,
     to: GMAIL_USER,
     subject: req.query.subject,
-    text: req.query.message
+    text:
+      "Message sent from " +
+      req.query.name +
+      ", via " +
+      req.query.email +
+      ":\n\n" +
+      req.query.message
   };
 
   smtpTrans.sendMail(mailOpts, (error, response) => {
     if (error) {
-      console.log("error", error);
       res.status(400).send("email not sent");
     } else {
-      console.log("sent");
       res.status(200).send("email sent");
     }
   });
 }
-
-//cheat.day.mailer@gmail.com
-// HashimHuss588853
