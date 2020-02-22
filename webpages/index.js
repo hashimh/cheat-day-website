@@ -1,3 +1,4 @@
+"use strict";
 // TODO:
 //   - change all onclicks to add event listener
 
@@ -141,6 +142,21 @@ function nameValidate(name) {
   }
 }
 
+function inputValidate(subject, targetLength, form) {
+  let subjectIn = document.getElementById(form);
+  if (subject.length > targetLength) {
+    subjectIn.style.border = "2px solid rgb(119, 221, 119)";
+    subjectIn.style.backgroundColor = "rgb(119, 221, 119)";
+  } else if (subject.length == 0) {
+    subjectIn.style.border = "2px solid rgb(192, 191, 191)";
+    subjectIn.style.backgroundColor = "rgb(192, 191, 191)";
+  } else {
+    // Subject length is too short
+    subjectIn.style.border = "2px solid rgb(255, 105, 97)";
+    subjectIn.style.backgroundColor = "rgb(255, 105, 97)";
+  }
+}
+
 function isEmail(email) {
   let regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   if (!regex.test(email)) {
@@ -159,7 +175,7 @@ function isName(name) {
   }
 }
 
-function sendBtnClicked() {
+async function sendBtnClicked() {
   // First, if things are empty, output an error message in #errorMsg
   // Then, check content of subject is > 1, and message length > 1.
   // Then, check the RECAPTCHA has authorised the user.
@@ -176,22 +192,54 @@ function sendBtnClicked() {
 
   if (isName(nameIn.value) !== true) {
     errorMsg.innerHTML = "please enter a valid name";
-    errorMsg.style.backgroundColor = "rgb(255, 105, 97)";
   } else {
     if (isEmail(emailIn.value) !== true) {
       errorMsg.innerHTML = "please enter a valid email address";
-      errorMsg.style.backgroundColor = "rgb(255, 105, 97)";
     } else {
       if (subjectIn.value.length < 2) {
         errorMsg.innerHTML = "please enter a valid message subject";
-        errorMsg.style.backgroundColor = "rgb(255, 105, 97)";
       } else {
         if (messageIn.value.length < 10) {
           errorMsg.innerHTML = "please enter a valid message";
-          errorMsg.style.backgroundColor = "rgb(255, 105, 97)";
         } else {
-          errorMsg.innerHTML = "";
-          errorMsg.style.backgroundColor = "#636363";
+          if (grecaptcha && grecaptcha.getResponse().length < 1) {
+            errorMsg.innerHTML = "please check the recaptcha form";
+          } else {
+            // ALL INPUTS HAVE BEEN VALIDATED, MESSAGE CAN NOW BE SENT
+            errorMsg.innerHTML = "";
+            const fetchOptions = {
+              credentials: "same-origin",
+              method: "POST"
+            };
+
+            let url =
+              "/api/sendMail" +
+              "?name=" +
+              encodeURIComponent(nameIn.value) +
+              "?email=" +
+              encodeURIComponent(emailIn.value) +
+              "?subject=" +
+              encodeURIComponent(subjectIn.value) +
+              "?message=" +
+              encodeURIComponent(messageIn.value);
+
+            const response = await fetch(url, fetchOptions);
+            if (!response.ok) {
+              // handle the error
+              console.log("Fetch response for /api/sendMail has failed.");
+              return;
+            } else {
+              console.log("Successful /api/sendMail call.");
+            }
+            alert("message sent to server");
+            // Clear modal content and close modal
+            nameIn.innerHTML = "";
+            emailIn.innerHTML = "";
+            subjectIn.innerHTML = "";
+            messageIn.innerHTML = "";
+            window.location.href = "#close";
+            body.classList.remove("no-scroll");
+          }
         }
       }
     }
@@ -202,5 +250,5 @@ function sendBtnClicked() {
 //   document.getElementById("demo-form").submit();
 // }
 
-// SITE KEY: 6LeeCtsUAAAAAO10B_s_wC-r1gOQRdpXBCTypPMp
-// SECRET KEY: 6LeeCtsUAAAAAHyh1Zr7OZKE6o8hq54jq5OwQa2M
+// SITE KEY: 6Le2QdsUAAAAADkXa6LUrknHARcIPGMqreb4ZVsW
+// SECRET KEY: 6Le2QdsUAAAAADrXA3u5vylzloGLd0vT1_3HxZHE

@@ -283,7 +283,7 @@ th {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   grid-template-rows: 2fr 1fr 1fr 1fr 0.1fr;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
     "para para"
     "name message"
@@ -312,8 +312,14 @@ th {
 }
 .modalBox6 {
   grid-area: send;
-  padding-left: 78.5%;
+  display: inline-flex;
+  padding-left: 10vh;
+  justify-content: flex-end;
 }
+.g-recaptcha {
+  padding-right: 10%;
+}
+
 .modalBox7 {
   grid-area: errorMsg;
 }
@@ -387,7 +393,7 @@ input:focus {
   padding: 1vw;
   width: 9vw;
   font-size: 20px;
-  height: 100%;
+  border-radius: 3px;
 }
 .modalBox6 input:hover {
   cursor: pointer;

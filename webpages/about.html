@@ -181,6 +181,7 @@
         type="text"
         name="mailSubject"
         placeholder="message subject..."
+        onchange="inputValidate(this.value, 5, 'mailSubject')"
         maxlength="32"
       />
     </div>
@@ -190,10 +191,15 @@
         id="mailMessage"
         name="mailMessage"
         placeholder="type your message here..."
+        onchange="inputValidate(this.value, 10, 'mailMessage')"
       ></textarea>
     </div>
 
     <div class="modalBox6">
+      <div
+        class="g-recaptcha"
+        data-sitekey="6Le2QdsUAAAAADkXa6LUrknHARcIPGMqreb4ZVsW"
+      ></div>
       <input
         id="sendMessage"
         type="button"
@@ -201,7 +207,7 @@
         value="send"
         onclick="sendBtnClicked()"
       />
-    </divc>
+    </div>
 
     <div class="modalBox7" id="errorMsgDiv">
       <p id="errorMsg"></p>
