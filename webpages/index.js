@@ -212,15 +212,17 @@ async function sendBtnClicked() {
               method: "POST"
             };
 
+            console.log("nameIn value:", nameIn.value);
+
             let url =
               "/api/sendMail" +
               "?name=" +
               encodeURIComponent(nameIn.value) +
-              "?email=" +
+              "&email=" +
               encodeURIComponent(emailIn.value) +
-              "?subject=" +
+              "&subject=" +
               encodeURIComponent(subjectIn.value) +
-              "?message=" +
+              "&message=" +
               encodeURIComponent(messageIn.value);
 
             const response = await fetch(url, fetchOptions);
@@ -237,7 +239,10 @@ async function sendBtnClicked() {
             emailIn.innerHTML = "";
             subjectIn.innerHTML = "";
             messageIn.innerHTML = "";
+
             window.location.href = "#close";
+            let body = document.body;
+
             body.classList.remove("no-scroll");
           }
         }
