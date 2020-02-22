@@ -224,8 +224,8 @@ th {
   font-size: 3vh;
 }
 
-#about-block-3 > h1 {
-  padding-top: 25vh;
+#about-block-3 h1 {
+  padding-top: 15vh;
 }
 #about-block-3 > p {
   width: 60%;
@@ -394,89 +394,6 @@ input:focus {
   background-color: rgb(192, 191, 191);
 }
 
-/* Tablet Devices (Portait and Landscape) */
-@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .topnav a {
-    font-size: 2.5vw;
-    padding: 2.5vw 3vw;
-  }
-
-  .about-block {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-bottom: 5vw;
-    width: 100%;
-  }
-
-  #about-block-1 {
-    padding-top: 15vw;
-  }
-
-  #about-block-1 > h1 {
-    font-size: 4vh;
-  }
-  #about-block-1 > p {
-    line-height: 1.2;
-    width: 100%;
-    padding-top: 2vh;
-    font-size: 2.75vh;
-  }
-
-  #about-block-img {
-    display: none;
-    background-color: rgb(105, 105, 105);
-  }
-
-  #about-block-2 {
-    font-size: 2.75vh;
-  }
-
-  #about-block-3 {
-    background-color: rgb(105, 105, 105);
-    font-size: 2.75vh;
-  }
-
-  /* TABLET MODAL CODE */
-  .modalContent {
-    text-align: center;
-    overflow-y: auto;
-    height: 70vh;
-    width: 80vw;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-areas:
-      "para"
-      "name message"
-      "email message"
-      "subject message"
-      "errorMsg send";
-  }
-  .modalContent input {
-    width: 100%;
-    padding: 1vw;
-    font-size: 2.5vh;
-  }
-  .modalContent div {
-    padding: 10px;
-  }
-  .modalBox5 {
-    padding: 0%;
-  }
-  .modalBox6 {
-    padding: 0%;
-  }
-  .modalBox6 input {
-    padding: 2vh;
-    font-size: 25px;
-  }
-  .modalBox1 p {
-    display: none;
-  }
-  .modalBox1 h3 {
-    font-size: 3vh;
-  }
-}
-
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
 Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -606,5 +523,92 @@ Show the link that contains should open and close the topnav (.icon) */
   }
   .modalBox1 h3 {
     font-size: 2.5vh;
+  }
+}
+
+/* Tablet Devices (Portait and Landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .topnav a {
+    font-size: 2.5vw;
+    padding: 2.5vw 3vw;
+  }
+
+  .about-block {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vw;
+    width: 100%;
+  }
+
+  #about-block-1 {
+    padding-top: 15vw;
+  }
+
+  #about-block-1 > h1 {
+    font-size: 4vh;
+  }
+  #about-block-1 > p {
+    line-height: 1.2;
+    width: 100%;
+    padding-top: 2vh;
+    font-size: 2.75vh;
+  }
+
+  #about-block-img {
+    display: none;
+    background-color: rgb(105, 105, 105);
+  }
+
+  #about-block-2 {
+    font-size: 2.75vh;
+  }
+
+  #about-block-3 {
+    background-color: rgb(105, 105, 105);
+    font-size: 2.75vh;
+  }
+
+  .about-block-3 > h1 {
+    padding-top: 0;
+  }
+
+  /* TABLET MODAL CODE */
+  .modalContent {
+    text-align: center;
+    overflow-y: auto;
+    height: 70vh;
+    width: 80vw;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "para"
+      "name message"
+      "email message"
+      "subject message"
+      "errorMsg send";
+  }
+  .modalContent input {
+    width: 100%;
+    padding: 1vw;
+    font-size: 2.5vh;
+  }
+  .modalContent div {
+    padding: 10px;
+  }
+  .modalBox5 {
+    padding: 0%;
+  }
+  .modalBox6 {
+    padding: 0%;
+  }
+  .modalBox6 input {
+    padding: 2vh;
+    font-size: 25px;
+  }
+  .modalBox1 p {
+    display: none;
+  }
+  .modalBox1 h3 {
+    font-size: 3vh;
   }
 }
