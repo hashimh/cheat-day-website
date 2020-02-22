@@ -228,22 +228,34 @@ async function sendBtnClicked() {
               return;
             } else {
               console.log("Successful /api/sendMail call.");
+              nameIn.value = "";
+              emailIn.value = "";
+              subjectIn.value = "";
+              messageIn.value = "";
+
+              nameIn.style.backgroundColor = "rgb(192, 191, 191)";
+              emailIn.style.backgroundColor = "rgb(192, 191, 191)";
+              subjectIn.style.backgroundColor = "rgb(192, 191, 191)";
+              messageIn.style.backgroundColor = "rgb(192, 191, 191)";
+
+              nameIn.style.border = "2px solid rgb(192, 191, 191)";
+              emailIn.style.border = "2px solid rgb(192, 191, 191)";
+              subjectIn.style.border = "2px solid rgb(192, 191, 191)";
+              messageIn.style.border = "2px solid rgb(192, 191, 191)";
             }
 
-            // Clear modal content and close modal
-            nameIn.innerHTML = "";
-            emailIn.innerHTML = "";
-            subjectIn.innerHTML = "";
-            messageIn.innerHTML = "";
-
-            errorMessage.innerHTML =
+            errorMsg.innerHTML =
               "your feedback has been submitted, please expect questions to be answered within a week.";
             errorDiv.style.backgroundColor = "#FDFD96";
 
-            setTimeout("", 5000);
-            window.location.href = "#close";
-            let body = document.body;
-            body.classList.remove("no-scroll");
+            setTimeout(function() {
+              // Clear modal content and close modal
+              errorMsg.innerHTML = "";
+              errorDiv.style.backgroundColor = "rgb(192, 191, 191)";
+              window.location.href = "#close";
+              let body = document.body;
+              body.classList.remove("no-scroll");
+            }, 5000);
           }
         }
       }
