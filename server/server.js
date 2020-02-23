@@ -17,7 +17,7 @@ app.use("/", express.static(webpagesPath));
 app.use("/images", express.static(imagesPath));
 
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "../webpages/" + "about.html"));
+  res.sendFile(path.join(__dirname, "../webpages/" + "home.html"));
 });
 
 const PORT = process.env.PORT || 8081;
