@@ -502,7 +502,7 @@ Show the link that contains should open and close the topnav (.icon) */
     height: 80vh;
     width: 80vw;
     grid-template-columns: max-content;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 4fr 0.5fr;
+    grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 2fr 1fr;
     grid-template-areas:
       "para"
       "name"
@@ -511,9 +511,12 @@ Show the link that contains should open and close the topnav (.icon) */
       "message"
       "send";
   }
+  .modalContent div {
+    width: 68vw;
+    margin-bottom: 2px;
+  }
   .modalContent input {
     width: 100%;
-    padding: 1vw;
     font-size: 2.5vh;
   }
   .modalBox5 {
@@ -522,10 +525,15 @@ Show the link that contains should open and close the topnav (.icon) */
   }
   .modalBox6 {
     padding: 0%;
+    display: block;
   }
   .modalBox6 input {
     padding: 2vh;
     font-size: 25px;
+  }
+  .g-recaptcha {
+    transform: scale(0.83);
+    transform-origin: 0 0;
   }
   .modalBox1 p {
     display: none;
@@ -595,43 +603,47 @@ Show the link that contains should open and close the topnav (.icon) */
     padding: 60px;
   }
 
-  /* TABLET MODAL CODE */
+  /* MOBILE MODAL CODE */
   .modalContent {
     text-align: center;
     overflow-y: auto;
-    height: 70vh;
+    height: 80vh;
     width: 80vw;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: max-content;
+    grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 2fr 1fr;
     grid-template-areas:
       "para"
-      "name message"
-      "email message"
-      "subject message"
-      "errorMsg send";
+      "name"
+      "email"
+      "subject"
+      "message"
+      "send";
+  }
+  .modalContent div {
+    width: 72vw;
+    margin-bottom: 2px;
   }
   .modalContent input {
     width: 100%;
-    padding: 1vw;
     font-size: 2.5vh;
-  }
-  .modalContent div {
-    padding: 10px;
   }
   .modalBox5 {
     padding: 0%;
+    grid-row-start: auto;
   }
   .modalBox6 {
     padding: 0%;
+    display: block;
   }
   .modalBox6 input {
     padding: 2vh;
+    margin-top: 10px;
     font-size: 25px;
   }
   .modalBox1 p {
     display: none;
   }
   .modalBox1 h3 {
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
 }
