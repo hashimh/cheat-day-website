@@ -233,6 +233,9 @@ iframe {
   .topnav a:not(.active) {
     display: none;
   }
+  .a-right {
+    float: left;
+  }
   .topnav a.active {
     background-color: #333;
   }
@@ -284,6 +287,13 @@ iframe {
     text-align: center;
     font-size: 17px;
     height: 200vh;
+  }
+
+  .midview h1 {
+    font-size: 2.5vh;
+  }
+  .midview p {
+    font-size: 2vh;
   }
 
   .midtext {

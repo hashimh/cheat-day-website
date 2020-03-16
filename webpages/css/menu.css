@@ -26,6 +26,9 @@ body {
   z-index: 10;
   padding: 1vw;
 }
+#a-right {
+  float: right;
+}
 
 .topnav a {
   float: left;
@@ -168,6 +171,9 @@ body {
 @media screen and (max-width: 600px) {
   .topnav a:not(.active) {
     display: none;
+  }
+  .a-right {
+    float: left;
   }
   .topnav a.active {
     background-color: #333;
