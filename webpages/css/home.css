@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(105, 105, 105);
+  background-color: rgb(150, 155, 156);
   display: block;
   margin: 0;
   margin-top: 0;
@@ -21,6 +21,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 10;
+  padding: 1vw;
 }
 
 .topnav a {
@@ -30,7 +31,8 @@ body {
   text-align: center;
   padding: 1vw 1.5vw;
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 1.5vw;
+  margin-right: 0.5vw;
 }
 
 .topnav a:hover {
@@ -65,7 +67,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.4;
+  opacity: 0.8;
   top: 0;
   left: 0;
   bottom: 0;
@@ -114,6 +116,10 @@ body {
 .arrow span:nth-child(3) {
   animation-delay: -0.4s;
 }
+.arrow span:hover {
+  cursor: pointer;
+}
+
 @keyframes animate {
   0% {
     opacity: 0;
@@ -137,16 +143,16 @@ body {
 }
 
 .midview div {
-  padding: 10vw;
+  padding: 8vw 6vw 8vw 6vw;
   padding-bottom: 0;
 }
 
 .midview h1 {
-  font-size: 4vh;
+  font-size: 3vw;
 }
 
 .midview p {
-  font-size: 2.5vh;
+  font-size: 1.5vw;
 }
 
 #frame-container {

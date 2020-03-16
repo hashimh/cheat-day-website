@@ -25,10 +25,10 @@ app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
 });
 
-app.post("/api/sendMail", sendMail);
-
 let GMAIL_USER = process.env.GMAIL_USER;
 let GMAIL_PASS = process.env.GMAIL_PASS;
+
+app.post("/api/sendMail", sendMail);
 
 function sendMail(req, res) {
   let smtpTrans = nodemailer.createTransport({

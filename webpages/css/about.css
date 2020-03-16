@@ -4,7 +4,7 @@
 */
 
 body {
-  background-color: rgb(105, 105, 105);
+  background-color: rgb(150, 155, 156);
   display: block;
   margin: 0;
   margin-top: 0;
@@ -28,6 +28,7 @@ img {
   top: 0;
   width: 100%;
   z-index: 10;
+  padding: 1vw;
 }
 
 .topnav a {
@@ -37,7 +38,8 @@ img {
   text-align: center;
   padding: 1vw 1.5vw;
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 1.5vw;
+  margin-right: 0.5vw;
 }
 
 .topnav a:hover {
