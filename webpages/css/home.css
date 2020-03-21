@@ -16,12 +16,12 @@ body {
 }
 .topnav {
   background-color: #333;
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
   padding: 1vw;
+  transition: all 0.25s ease-in-out;
 }
 
 .topnav a {
@@ -35,10 +35,12 @@ body {
   margin-right: 0.5vw;
 }
 
-.topnav a:hover {
+.topnav a:hover,
+.dropdown:hover .drop-btn {
   background-color: #ddd;
   color: black;
-  border-bottom: 2px solid #ddd;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .topnav a.active:hover {
@@ -52,6 +54,49 @@ body {
 
 .topnav .icon {
   display: none;
+}
+
+/* dropdown nav code */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .drop-btn {
+  font-size: 1.5vw;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1vw 1.5vw;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  padding: 1vw 1.5vw;
+  display: block;
+  text-align: left;
+  margin: 0;
+  font-size: 1vw;
+}
+
+.dropdown-content a:hover {
+  background-color: purple;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  background-color: #eee;
+  display: block;
+  z-index: 100;
 }
 
 /* TOP VIEW CSS */
@@ -261,7 +306,7 @@ iframe {
     border: none;
     font-weight: bold;
   }
-  .topnave a:hover {
+  .topnav a:hover {
     border-left: 2px solid white;
   }
   .topnav.responsive {
