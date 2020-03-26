@@ -1,7 +1,3 @@
-"use strict";
-// TODO:
-//   - change all onclicks to add event listener
-
 // FUNCTION TO ALTER CLASSNAMES OF NAVBAR ELEMENTS FOR RESPONSIVENESS //
 function navFunction() {
   console.log("entered navFunction");
@@ -16,6 +12,7 @@ function navFunction() {
 // FUNCTION TO ALTER CLASSNAMES OF SIDENAV ELEMENTS FOR RESPONSIVENESS //
 document.addEventListener("DOMContentLoaded", function() {
   let links = document.getElementsByClassName("side_a");
+  zoomwall.create(document.getElementById("about-block-img"), true);
 
   // Add event listener for clicking links
   for (let i = 0; i < links.length; i++) {
