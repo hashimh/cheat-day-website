@@ -462,7 +462,7 @@ Show the link that contains should open and close the topnav (.icon) */
   .topnav a:not(.active) {
     display: none;
   }
-  .a-right {
+  #a-right {
     float: left;
   }
   .topnav a.active {
@@ -506,6 +506,23 @@ Show the link that contains should open and close the topnav (.icon) */
     float: none;
     display: block;
     text-align: left;
+  }
+  .topnav .dropdown {
+    display: none;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+    display: block;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .drop-btn {
+    display: block;
+    text-align: left;
+    font-size: 4vw;
+    padding: 4vw 4.5vw;
   }
 
   .about-block {

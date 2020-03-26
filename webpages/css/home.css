@@ -327,6 +327,24 @@ iframe {
     float: left;
   }
 
+  .topnav .dropdown {
+    display: none;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+    display: block;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .drop-btn {
+    display: block;
+    text-align: left;
+    font-size: 4vw;
+    padding: 4vw 4.5vw;
+  }
+
   .midview {
     display: block;
     text-align: center;
