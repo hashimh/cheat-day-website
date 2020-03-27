@@ -61,15 +61,10 @@ function openLightbox() {
   document.getElementById("myModal").style.display = "block";
   let body = document.body;
   body.classList.add("no-scroll");
-  let modal = document.getElementById("myModal");
-  window.onclick = function(e) {
-    if (e.target == modal) {
-      body.classList.remove("no-scroll");
-      this.closeModal();
-    }
-  };
 }
 function closeModal() {
+  let body = document.body;
+  body.classList.remove("no-scroll");
   document.getElementById("myModal").style.display = "none";
 }
 
