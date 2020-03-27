@@ -22,7 +22,7 @@
     <title>cheat day</title>
   </head>
 
-  <body onload="showSlides()">
+  <body>
     <div class="topnav" id="myTopNav">
       <a href="home.html">home</a>
       <a href="menu.html">menu</a>
@@ -78,30 +78,94 @@
         <h1>gallery</h1>
         <ul class="about-2-gallery">
           <li>
-            <img src="../images/gallery/1.jpg" />
+            <img
+              src="../images/gallery/1.jpg"
+              onclick="openLightbox();currentSlide(1)"
+              class="hover-shadow"
+            />
           </li>
           <li>
-            <img src="../images/gallery/2.jpg" />
+            <img
+              src="../images/gallery/2.jpg"
+              onclick="openLightbox();currentSlide(2)"
+              class="hover-shadow"
+            />
           </li>
           <li>
-            <img src="../images/gallery/3.jpg" />
+            <img
+              src="../images/gallery/3.jpg"
+              onclick="openLightbox();currentSlide(3)"
+              class="hover-shadow"
+            />
           </li>
           <li>
-            <img src="../images/gallery/4.jpg" />
+            <img
+              src="../images/gallery/4.jpg"
+              onclick="openLightbox();currentSlide(4)"
+              class="hover-shadow"
+            />
           </li>
           <li>
-            <img src="../images/gallery/5.jpg" />
+            <img
+              src="../images/gallery/5.jpg"
+              onclick="openLightbox();currentSlide(5)"
+              class="hover-shadow"
+            />
           </li>
           <li>
-            <img src="../images/gallery/6.jpg" />
+            <img
+              src="../images/gallery/6.jpg"
+              onclick="openLightbox();currentSlide(6)"
+              class="hover-shadow"
+            />
           </li>
           <li>
-            <img src="../images/gallery/7.jpg" />
+            <img
+              src="../images/gallery/7.jpg"
+              onclick="openLightbox();currentSlide(7)"
+              class="hover-shadow"
+            />
           </li>
           <li>
-            <img src="../images/gallery/8.jpg" />
+            <img
+              src="../images/gallery/8.jpg"
+              onclick="openLightbox();currentSlide(8)"
+              class="hover-shadow"
+            />
           </li>
         </ul>
+      </div>
+
+      <div id="myModal" class="modal-2">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <img src="../images/gallery/1.jpg" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/gallery/2.jpg" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/gallery/3.jpg" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/gallery/4.jpg" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/gallery/5.jpg" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/gallery/6.jpg" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/gallery/7.jpg" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/gallery/8.jpg" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
       </div>
 
       <div class="about-block" id="about-block-2">

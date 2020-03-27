@@ -56,23 +56,36 @@ function aboutDown2() {
     .scrollIntoView({ behavior: "smooth" });
 }
 
-var slideIndex = 1;
+// IMAGE GALLERY MODAL CODE
+function openLightbox() {
+  document.getElementById("myModal").style.display = "block";
+  let body = document.body;
+  body.classList.add("no-scroll");
+  let modal = document.getElementById("myModal");
+  window.onclick = function(e) {
+    if (e.target == modal) {
+      body.classList.remove("no-scroll");
+      this.closeModal();
+    }
+  };
+}
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
-
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  console.log(slides);
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -84,6 +97,8 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
+
+// ------------------------
 
 function modalOpened() {
   let body = document.body;
