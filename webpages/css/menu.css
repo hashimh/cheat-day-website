@@ -172,7 +172,7 @@ body {
 }
 
 .col {
-  background-color: rgba(51, 51, 51, 0.95);
+  background-color: rgba(51, 51, 51, 0.8);
   border-radius: 1vh;
   height: 82vh;
   margin-left: 7vw;
@@ -191,6 +191,15 @@ body {
     "footer footer";
 }
 
+/* add backgrounds to sub menus */
+
+#menuitem1 {
+  background-image: url("../../images/backgrounds/classic-background-2.jpg");
+}
+
+#menuitem2 {
+  background-image: url("../../images/backgrounds/gourmet-background-2.jpg");
+}
 #menuitem2 h3 {
   font-size: 1.6vw;
 }
@@ -226,11 +235,12 @@ body {
   font-size: 1.3vw;
 }
 
-#menuitem8 h3 {
-  /* sides */
+#menuitem7 {
+  background-image: url("../../images/backgrounds/pizza-background.jpg");
 }
-#menuitem8 p {
-  /* sides */
+
+#menuitem8 {
+  background-image: url("../../images/backgrounds/sides-background.jpeg");
 }
 
 .col-title {
