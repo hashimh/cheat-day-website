@@ -23,6 +23,11 @@ body {
 #a-right {
   float: right;
 }
+#a-right:hover {
+  background-color: inherit;
+  color: white;
+  cursor: default;
+}
 .topnav {
   background-color: #333;
   position: fixed;

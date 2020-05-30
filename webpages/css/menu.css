@@ -28,7 +28,11 @@ body {
 #a-right {
   float: right;
 }
-
+#a-right:hover {
+  background-color: inherit;
+  color: white;
+  cursor: default;
+}
 .topnav a {
   float: left;
   display: block;
