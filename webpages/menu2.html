@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="./css/menu2.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="//fonts.googleapis.com/css?family=Raleway"
+/>
+
+<html lang="en" dir="ltr">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <script type="text/javascript" src="index.js"></script>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>cheat day - high wycombe</title>
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopNav">
+      <a href="home.html">home</a>
+      <a href="menu.html" class="active">menu</a>
+      <a href="about.html">about</a>
+      <div class="dropdown">
+        <button class="drop-btn">
+          order now
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a
+            href="https://ordersense.co.uk/os/branch.php?client_id=a88755b5"
+            target="_blank"
+            >order now (not pizzas)</a
+          >
+          <a
+            href="https://ordersense.co.uk/os/branch.php?client_id=ee98e0c9"
+            target="_blank"
+            >order now (pizzas only)</a
+          >
+          <a
+            href="https://www.just-eat.co.uk/restaurants-cheat-day-high-wycombe/menu"
+            target="_blank"
+            >just eat</a
+          >
+          <a
+            href="https://deliveroo.co.uk/menu/high-wycombe/high-wycombe/grill-and-fry"
+            target="_blank"
+            >deliveroo</a
+          >
+          <a
+            href="https://www.ubereats.com/gb/london/food-delivery/cheat-day/MlLEOY15S-iTCuHgXjVRoQ"
+            target="_blank"
+            >uber eats</a
+          >
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a id="a-right" target="_blank">01494 256 575</a>
+    </div>
+
+    <div class="menubg">
+      <div class="menu">
+        <div class="menunav">
+          <ul id="menunavul">
+            <li>
+              <a onclick="changeMenu(this)" class="active">classic burgers</a>
+            </li>
+            <li><a onclick="changeMenu(this)">gourmet burgers</a></li>
+            <li><a onclick="changeMenu(this)">wraps</a></li>
+            <li><a onclick="changeMenu(this)">kebabs</a></li>
+            <li><a onclick="changeMenu(this)">fish & chips</a></li>
+            <li><a onclick="changeMenu(this)">grilled chicken</a></li>
+            <li><a onclick="changeMenu(this)">pizza</a></li>
+            <li id="listend"><a onclick="changeMenu(this)">sides</a></li>
+          </ul>
+        </div>
+
+        <div class="menucontent" id="menucontentul">
+          <div data-name="classic burgers" class="activemenu">
+            <section>
+              <section class="item">
+                <p class="head">CHICKEN FILLET</p>
+                <p class="info">chicken fillet breast piece</p>
+                <p class="price">£2.75</p>
+              </section>
+
+              <section class="item">
+                <p class="head">GRILLED CHICKEN</p>
+                <p class="info">marinated and grilled chicken breast</p>
+                <p class="price">£3.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">1/4 POUNDER</p>
+                <p class="info">
+                  4oz patty, with a cheese slice and burger sauce
+                </p>
+                <p class="price">£2.80</p>
+              </section>
+
+              <section class="item">
+                <p class="head">1/2 POUNDER</p>
+                <p class="info">
+                  two 4oz patty, with a cheese slice and burger sauce
+                </p>
+                <p class="price">£3.80</p>
+              </section>
+
+              <section class="item">
+                <p class="head">FISH FILLET</p>
+                <p class="info">
+                  fish fillet served with tartar sauce
+                </p>
+                <p class="price">£2.75</p>
+              </section>
+
+              <section class="item">
+                <p class="head">TOWER</p>
+                <p class="info">
+                  chicken fillet breast piece with a hashbrown
+                </p>
+                <p class="price">£2.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">TOWER</p>
+                <p class="info">
+                  chicken fillet breast piece with a hashbrown
+                </p>
+                <p class="price">£2.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">STACKER</p>
+                <p class="info">
+                  two 4oz beef patties with cheese, and a middle bun slice
+                </p>
+                <p class="price">£4.30</p>
+              </section>
+
+              <section class="item">
+                <p class="head">VEGGIE</p>
+                <p class="info">
+                  vegetable and bean patty with suace and salad
+                </p>
+                <p class="price">£2.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">VALUE</p>
+                <p class="info">
+                  small meat patty with sauce and salad
+                </p>
+                <p class="price">£1.30</p>
+              </section>
+
+              <section class="item"></section>
+
+              <section class="item footer">
+                <p class="head">MAKE IT A MEAL</p>
+                <p class="info">includes regular chips and a can of drink</p>
+                <p class="price">+ £2.00</p>
+              </section>
+            </section>
+          </div>
+          <div data-name="gourmet burgers">
+            <section>
+              <section class="item">
+                <p class="head">JUST CHEAT</p>
+                <p class="info">
+                  6oz gourmet beef patty and cheese, in a brioche bun
+                </p>
+                <p class="price">£4.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">BIG CHEAT</p>
+                <p class="info">
+                  double up with two 6oz gourmet beef patties and cheese, in a
+                  brioche bun
+                </p>
+                <p class="price">£5.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">CHICKEAT</p>
+                <p class="info">
+                  grilled chicken fillet with cheese, served in a toasted
+                  brioche bun
+                </p>
+                <p class="price">£4.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">THE CHEAT BOX</p>
+                <p class="info">
+                  cheat day deal: big cheat / chickeat burger, with onion rings,
+                  hashbrowns and a sauce dip
+                </p>
+                <p class="price">£5.50</p>
+              </section>
+
+              <section class="item"></section>
+              <section class="item"></section>
+              <section class="item"></section>
+              <section class="item"></section>
+              <section class="item"></section>
+              <section class="item"></section>
+              <section class="item"></section>
+
+              <section class="footer item">
+                <p class="head">MAKE IT A MEAL</p>
+                <p class="info">
+                  includes regular chips and a can of drink
+                </p>
+                <p class="price">+ £2.00</p>
+              </section>
+            </section>
+          </div>
+          <div data-name="wraps">
+            <section>
+              <section class="item">
+                <p class="head">CHICKEN FILLET</p>
+                <p class="info">
+                  sliced fillet breast piece in a tortilla wrap
+                </p>
+                <p class="price">£3.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">GRILLED CHICKEN</p>
+                <p class="info">
+                  sliced grilled fillet breast piece in a tortilla wrap, choice
+                  of lemon & herb, medium or spicy
+                </p>
+                <p class="price">£3.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">VEGGIE</p>
+                <p class="info">
+                  sliced veggie patty in a tortilla wrap
+                </p>
+                <p class="price">£3.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">SEEKH KEBAB</p>
+                <p class="info">
+                  flame grilled seekh kebab, minced meat from a skewer
+                </p>
+                <p class="price">£3.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">CHICKEN TIKKA</p>
+                <p class="info">
+                  small chicken tikka pieces in a tortilla wrap
+                </p>
+                <p class="price">£3.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">DONER</p>
+                <p class="info">
+                  doner kebab slices in a tortilla wrap
+                </p>
+                <p class="price">£3.00</p>
+              </section>
+
+              <section class="item"></section>
+              <section class="item"></section>
+              <section class="item"></section>
+              <section class="item"></section>
+              <section class="item"></section>
+
+              <section class="footer item">
+                <p class="head">MAKE IT A MEAL</p>
+                <p class="info">
+                  includes regular chips and a can of drink
+                </p>
+                <p class="price">+ £2.00</p>
+              </section>
+            </section>
+          </div>
+          <div data-name="kebabs">kebabs</div>
+          <div data-name="fish & chips">fish and chips</div>
+          <div data-name="grilled chicken">grilled chicken</div>
+          <div data-name="pizza">pizza</div>
+          <div data-name="sides">sides</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

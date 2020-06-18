@@ -10,12 +10,12 @@ function navFunction() {
 }
 
 // FUNCTION TO ALTER CLASSNAMES OF SIDENAV ELEMENTS FOR RESPONSIVENESS //
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let links = document.getElementsByClassName("side_a");
 
   // Add event listener for clicking links
   for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function() {
+    links[i].addEventListener("click", function () {
       let div = document.getElementsByName(this.innerHTML);
       div[0].scrollIntoView({ behavior: "smooth" });
     });
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Add event listener for scrolling to "links"
   let divs = document.getElementsByClassName("menuitem");
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     let index = divs.length;
     while (--index && window.scrollY + 100 < divs[index].offsetTop) {}
     for (let i = 0; i < links.length; i++) {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // FUNCTION TO RESET PAGE LOCATION ON REFRESH
-window.onbeforeunload = function() {
+window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
 
@@ -99,7 +99,7 @@ function modalOpened() {
   body.classList.add("no-scroll");
 
   let modal = document.getElementById("emailModal");
-  window.onclick = function(e) {
+  window.onclick = function (e) {
     if (e.target == modal) {
       window.location.href = "#close";
       body.classList.remove("no-scroll");
@@ -213,7 +213,7 @@ async function sendBtnClicked() {
             errorMsg.innerHTML = "";
             const fetchOptions = {
               credentials: "same-origin",
-              method: "POST"
+              method: "POST",
             };
 
             let url =
@@ -254,7 +254,7 @@ async function sendBtnClicked() {
               "your feedback has been submitted, please expect questions to be answered within a week.";
             errorDiv.style.backgroundColor = "#FDFD96";
 
-            setTimeout(function() {
+            setTimeout(function () {
               // Clear modal content and close modal
               errorMsg.innerHTML = "";
               errorDiv.style.backgroundColor = "rgb(192, 191, 191)";
@@ -263,6 +263,34 @@ async function sendBtnClicked() {
               body.classList.remove("no-scroll");
             }, 5000);
           }
+        }
+      }
+    }
+  }
+}
+
+// NEW MENU JS
+// add event listeners for each element, done on the onload event
+function changeMenu(obj) {
+  let ul = document.getElementById("menunavul");
+  let lis = ul.getElementsByTagName("a");
+
+  for (let i = 0; i < lis.length; i++) {
+    if (obj != lis[i]) {
+      lis[i].classList.remove("active");
+    } else {
+      lis[i].classList.add("active");
+      console.log(lis[i].innerHTML);
+
+      // now change the content of divcontent
+      let menuul = document.getElementById("menucontentul");
+      let divs = menuul.getElementsByTagName("div");
+
+      for (let j = 0; j < divs.length; j++) {
+        if (lis[i].innerHTML != divs[j].dataset.name) {
+          divs[j].classList.remove("activemenu");
+        } else {
+          divs[j].classList.add("activemenu");
         }
       }
     }
