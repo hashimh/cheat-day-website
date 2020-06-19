@@ -277,20 +277,25 @@ function changeMenu(obj) {
 
   for (let i = 0; i < lis.length; i++) {
     if (obj != lis[i]) {
-      lis[i].classList.remove("active");
+      lis[i].classList.remove("active2");
     } else {
-      lis[i].classList.add("active");
+      lis[i].classList.add("active2");
       console.log(lis[i].innerHTML);
 
       // now change the content of divcontent
       let menuul = document.getElementById("menucontentul");
       let divs = menuul.getElementsByTagName("div");
 
+      let optul = document.getElementById("menuinfoul");
+      let divs2 = optul.getElementsByTagName("div");
+
       for (let j = 0; j < divs.length; j++) {
         if (lis[i].innerHTML != divs[j].dataset.name) {
           divs[j].classList.remove("activemenu");
+          divs2[j].classList.remove("activemenu");
         } else {
           divs[j].classList.add("activemenu");
+          divs2[j].classList.add("activemenu");
         }
       }
     }

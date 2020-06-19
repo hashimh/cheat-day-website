@@ -115,9 +115,14 @@ body {
 .menunav {
   grid-area: nav;
   justify-self: center;
+  padding: 1vw;
+  width: 100%;
 }
 .menucontent {
   grid-area: cont;
+}
+.menuinfo {
+  grid-area: opt;
 }
 
 .menu {
@@ -131,9 +136,13 @@ body {
   font-family: "Courier New", Courier, monospace;
 
   display: grid;
-  grid-template-areas: "nav" "cont";
+  /* grid-template-areas: "nav" "cont";
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 9fr;
+  grid-template-rows: 1fr 9fr; */
+
+  grid-template-areas: "cont nav" "cont opt";
+  grid-template-columns: 70fr 30fr;
+  grid-template-rows: 82fr 18fr;
 }
 
 .menunav ul {
@@ -143,24 +152,22 @@ body {
   margin: 0;
   padding: 0;
 }
-.menunav ul li {
-  float: left;
-  border-right: 1px solid white;
-}
-#listend {
-  border: none;
-}
+/* .menunav ul li {
+  margin-top: 1vh;
+} */
 .menunav ul li a {
   display: block;
   text-align: center;
   padding: 0.75vw 1.5vw 0.75vw 1.5vw;
+  margin: 0.2vw;
   font-size: 1.25vw;
+  transition: font-size 0.2s ease;
 }
 .menunav ul li a:hover {
   cursor: pointer;
 }
-.active {
-  text-decoration: underline;
+.active2 {
+  font-size: 1.9vw !important;
 }
 
 /* menu content */
@@ -169,23 +176,28 @@ body {
   padding: 2vw;
   color: white;
 }
-.menucontent .activemenu {
+.menucontent .activemenu,
+.menuinfo .activemenu {
   opacity: 1;
+  transition: opacity 0.5s ease;
 }
-.menucontent div:not(.activemenu) {
+.menucontent div:not(.activemenu),
+.menuinfo div:not(.activemenu) {
   opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .menucontent > div {
   position: absolute;
 }
+
 .menucontent div section {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   flex-wrap: wrap;
-  height: 60vh;
-  width: 74vw;
+  height: 70vh;
+  width: 60vw;
 }
 
 .menucontent div section section {
@@ -209,13 +221,26 @@ section h3 {
 .price {
   font-size: 1vw;
 }
-/* .item {
-  padding-bottom: 3vh;
-} */
+
 .item p {
   margin: 0;
 }
 .footer {
   font-style: italic;
+}
+
+/* menu options css */
+.menuinfo {
+  text-align: center;
+  color: white;
+  font-size: 1vw;
+  padding: 1vw;
+}
+.menuinfo p {
+  margin: 0;
+}
+.menuinfo div {
+  position: absolute;
+  padding-right: 2vw;
   text-align: center;
 }
