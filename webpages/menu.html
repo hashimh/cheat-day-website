@@ -4,10 +4,11 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
-<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet" />
+
 <link
-  href="//db.onlinewebfonts.com/c/cbe3c655aaf597ef4d3be7814e384aae?family=1906+French+News"
   rel="stylesheet"
+  type="text/css"
+  href="//fonts.googleapis.com/css?family=Raleway"
 />
 
 <html lang="en" dir="ltr">
@@ -64,476 +65,503 @@
       <a id="a-right" target="_blank">01494 256 575</a>
     </div>
 
-    <div class="sidenav" id="mySideNav">
-      <a class="side_a active_a">classic burgers</a>
-      <a class="side_a">gourmet burgers</a>
-      <a class="side_a">wraps</a>
-      <a class="side_a">kebabs</a>
-      <a class="side_a">fish and chips</a>
-      <a class="side_a">grilled chicken</a>
-      <a class="side_a">pizzas</a>
-      <a class="side_a">sides</a>
+    <div class="menubg">
+      <div class="menu">
+        <div class="menunav">
+          <ul id="menunavul">
+            <li>
+              <a onclick="changeMenu(this)" class="active2">classic burgers</a>
+            </li>
+            <li><a onclick="changeMenu(this)">gourmet burgers</a></li>
+            <li><a onclick="changeMenu(this)">wraps</a></li>
+            <li><a onclick="changeMenu(this)">kebabs</a></li>
+            <li><a onclick="changeMenu(this)">fish and chips</a></li>
+            <li><a onclick="changeMenu(this)">grilled chicken</a></li>
+            <li><a onclick="changeMenu(this)">pizza</a></li>
+            <li id="listend"><a onclick="changeMenu(this)">sides</a></li>
+          </ul>
+        </div>
+
+        <div class="menucontent" id="menucontentul">
+          <div data-name="classic burgers" class="activemenu">
+            <section>
+              <section class="item">
+                <p class="head">CHICKEN FILLET</p>
+                <p class="info">chicken fillet breast piece</p>
+                <p class="price">£2.75</p>
+              </section>
+
+              <section class="item">
+                <p class="head">GRILLED CHICKEN</p>
+                <p class="info">marinated and grilled chicken breast</p>
+                <p class="price">£3.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">1/4 POUNDER</p>
+                <p class="info">
+                  4oz patty, with a cheese slice and burger sauce
+                </p>
+                <p class="price">£2.80</p>
+              </section>
+
+              <section class="item">
+                <p class="head">1/2 POUNDER</p>
+                <p class="info">
+                  two 4oz patty, with a cheese slice and burger sauce
+                </p>
+                <p class="price">£3.80</p>
+              </section>
+
+              <section class="item">
+                <p class="head">FISH FILLET</p>
+                <p class="info">
+                  fish fillet served with tartar sauce
+                </p>
+                <p class="price">£2.75</p>
+              </section>
+
+              <section class="item">
+                <p class="head">TOWER</p>
+                <p class="info">
+                  chicken fillet breast piece with a hashbrown
+                </p>
+                <p class="price">£2.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">STACKER</p>
+                <p class="info">
+                  two 4oz beef patties with cheese, and a middle bun slice
+                </p>
+                <p class="price">£4.30</p>
+              </section>
+
+              <section class="item">
+                <p class="head">VEGGIE</p>
+                <p class="info">
+                  vegetable and bean patty with suace and salad
+                </p>
+                <p class="price">£2.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">VALUE</p>
+                <p class="info">
+                  small meat patty with sauce and salad
+                </p>
+                <p class="price">£1.30</p>
+              </section>
+            </section>
+          </div>
+          <div data-name="gourmet burgers">
+            <section>
+              <section class="item">
+                <p class="head">JUST CHEAT</p>
+                <p class="info">
+                  6oz gourmet beef patty and cheese, in a brioche bun
+                </p>
+                <p class="price">£4.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">BIG CHEAT</p>
+                <p class="info">
+                  double up with two 6oz gourmet beef patties and cheese, in a
+                  brioche bun
+                </p>
+                <p class="price">£5.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">CHICKEAT</p>
+                <p class="info">
+                  grilled chicken fillet with cheese, served in a toasted
+                  brioche bun
+                </p>
+                <p class="price">£4.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">THE CHEAT BOX</p>
+                <p class="info">
+                  cheat day deal: big cheat / chickeat burger, with onion rings,
+                  hashbrowns and a sauce dip
+                </p>
+                <p class="price">£5.50</p>
+              </section>
+            </section>
+          </div>
+          <div data-name="wraps">
+            <section>
+              <section class="item">
+                <p class="head">CHICKEN FILLET</p>
+                <p class="info">
+                  sliced fillet breast piece in a tortilla wrap
+                </p>
+                <p class="price">£3.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">GRILLED CHICKEN</p>
+                <p class="info">
+                  sliced grilled fillet breast piece in a tortilla wrap, choice
+                  of lemon & herb, medium or spicy
+                </p>
+                <p class="price">£3.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">VEGGIE</p>
+                <p class="info">
+                  sliced veggie patty in a tortilla wrap
+                </p>
+                <p class="price">£3.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">SEEKH KEBAB</p>
+                <p class="info">
+                  flame grilled seekh kebab, minced meat from a skewer
+                </p>
+                <p class="price">£3.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">CHICKEN TIKKA</p>
+                <p class="info">
+                  small chicken tikka pieces in a tortilla wrap
+                </p>
+                <p class="price">£3.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">DONER</p>
+                <p class="info">
+                  doner kebab slices in a tortilla wrap
+                </p>
+                <p class="price">£3.00</p>
+              </section>
+            </section>
+          </div>
+          <div data-name="kebabs">
+            <section>
+              <section class="item">
+                <p class="head">DONER</p>
+                <p class="info">
+                  mixed meat doner kebab in pitta bread, with a choice of salad
+                  and sauces
+                </p>
+                <p class="price">£4.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">SEEKH</p>
+                <p class="info">
+                  flame grilled seekh kebab, with a choice of salad and sauces
+                </p>
+                <p class="price">£4.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">TIKKA</p>
+                <p class="info">
+                  chicken tikka kebab in pitta bread, with a choice of salad and
+                  sauces
+                </p>
+                <p class="price">£4.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">MIXED COMBO</p>
+                <p class="info">
+                  regular mixed meat and chicken doner kebab in pitta bread,
+                  with a choice of salad and sauces
+                </p>
+                <p class="price">£4.00</p>
+              </section>
+            </section>
+          </div>
+          <div data-name="fish and chips">
+            <section>
+              <section class="item">
+                <p class="head">COD</p>
+                <p class="info">
+                  large deep fried cod fillet
+                </p>
+                <p class="price">£4.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">HADDOCK</p>
+                <p class="info">
+                  large deep fried haddock fillet
+                </p>
+                <p class="price">£4.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">MASALA</p>
+                <p class="info">
+                  masala spiced fish fillet
+                </p>
+                <p class="price">£4.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">SCAMPI</p>
+                <p class="info">
+                  8 to 10 breadcrumed and fried scampi pieces
+                </p>
+                <p class="price">£4.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">FISH CAKE</p>
+                <p class="info">
+                  single fried jumbo fish cake
+                </p>
+                <p class="price">£1.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">SAUSAGE</p>
+                <p class="info">
+                  large fried chicken sausage, battered for + £0.25
+                </p>
+                <p class="price">£1.50</p>
+              </section>
+            </section>
+          </div>
+          <div data-name="grilled chicken">
+            <section>
+              <section class="item">
+                <p class="head">STRIPS</p>
+                <p class="info">
+                  grilled fillet cut into 4/5 pieces
+                </p>
+                <p class="price">£3.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">WINGS</p>
+                <p class="info">
+                  portion of 5 grilled wings
+                </p>
+                <p class="price">£3.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">HALF CHICKEN</p>
+                <p class="info">
+                  1/2 chicken, side breast piece and a leg piece
+                </p>
+                <p class="price">£3.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">FULL CHICKEN</p>
+                <p class="info">
+                  full grilled chicken cut into two breast pieces and two leg
+                  pieces
+                </p>
+                <p class="price">£4.00</p>
+              </section>
+            </section>
+          </div>
+          <div data-name="pizza">
+            <section>
+              <section class="item">
+                <p class="head">MARGHERITA</p>
+                <p class="info">
+                  tomato sauce and a margherita cheese topping
+                </p>
+                <p class="price">£4.00 | £5.00 | £6.00 | £8.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">VEGETARIAN</p>
+                <p class="info">
+                  margherita, tomatoes, onions, bell peppers and mushrooms
+                </p>
+                <p class="price">£5.00 | £6.00 | £8.00 | £10.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">CHICKEN</p>
+                <p class="info">
+                  margherita, tomatoes, onions, bell peppers, mushrooms,
+                  sweetcorn, chicken and jalapeno
+                </p>
+                <p class="price">£6.00 | £7.00 | £9.00 | £11.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">HAWAIIAN</p>
+                <p class="info">
+                  margherita, julian turkey, mushrooms and pineapple
+                </p>
+                <p class="price">£6.00 | £7.00 | £9.00 | £11.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">PEPPERONI</p>
+                <p class="info">
+                  margherita and pepperoni slices
+                </p>
+                <p class="price">£6.00 | £7.00 | £9.00 | £11.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">MEXICAN</p>
+                <p class="info">
+                  margherita, julian turkey, pepperoni, vegetables
+                </p>
+                <p class="price">£6.00 | £7.00 | £9.00 | £11.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">KASHMIRI</p>
+                <p class="info">
+                  margherita, tomatoes, onions, peppers, mushrooms and chicken
+                  kebab
+                </p>
+                <p class="price">£7.00 | £8.00 | £10.00 | £12.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">MEAT FEAST</p>
+                <p class="info">
+                  onions, peppers, julian turkey, spicy beef, chicken and
+                  pepperoni
+                </p>
+                <p class="price">£7.00 | £8.00 | £10.00 | £12.00</p>
+              </section>
+            </section>
+          </div>
+          <div data-name="sides">
+            <section>
+              <section class="item">
+                <p class="head">SALAD</p>
+                <p class="info">
+                  salad mix of your choice
+                </p>
+                <p class="price">£2.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">CHIPS</p>
+                <p class="info">
+                  regular portion of fresh potato chips, made daily on site
+                </p>
+                <p class="price">£1.30</p>
+              </section>
+
+              <section class="item">
+                <p class="head">CHEESY CHIPS</p>
+                <p class="info">
+                  add some grated cheese onto your chips
+                </p>
+                <p class="price">£2.30</p>
+              </section>
+
+              <section class="item">
+                <p class="head">DIPS</p>
+                <p class="info">
+                  pots of chilli, garlic, mayo and bbq sauces
+                </p>
+                <p class="price">£0.40</p>
+              </section>
+
+              <section class="item">
+                <p class="head">SMALL SIDES</p>
+                <p class="info">
+                  small potion of beans, mushy peas or curry sauce
+                </p>
+                <p class="price">£0.60</p>
+              </section>
+
+              <section class="item">
+                <p class="head">SOUTHERN FRIED STRIPS</p>
+                <p class="info">
+                  portion of 6 slightly spicy strips
+                </p>
+                <p class="price">£3.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">POPCORN CHICKEN</p>
+                <p class="info">
+                  small portion of popcorn chicken bites
+                </p>
+                <p class="price">£2.50</p>
+              </section>
+
+              <section class="item">
+                <p class="head">NUGGETS</p>
+                <p class="info">
+                  portion of 6 fried chicken nuggets
+                </p>
+                <p class="price">£2.00</p>
+              </section>
+
+              <section class="item">
+                <p class="head">DRINK</p>
+                <p class="info">
+                  cans | 500ml | 1.5ltr
+                </p>
+                <p class="price">£0.90 | £1.50 | £2.25</p>
+              </section>
+            </section>
+          </div>
+        </div>
+
+        <div class="menuinfo" id="menuinfoul">
+          <div data-name="classic burgers" class="activemenu">
+            <p>add regular chips and a can for + £2.00</p>
+          </div>
+          <div data-name="gourmet burgers">
+            <p>add regular chips and a can for + £2.00</p>
+          </div>
+          <div data-name="wraps">
+            <p>add regular chips and a can for + £2.00</p>
+          </div>
+          <div data-name="kebabs">
+            <p>
+              add regular chips and a can for + £2.00
+            </p>
+            <br />
+            <p>make it large for + £1.00</p>
+          </div>
+          <div data-name="fish and chips">
+            <p>
+              add regular chips and a can for + £2.00 <br />
+              <br />
+              add mushy peas for + £0.60
+            </p>
+          </div>
+          <div data-name="grilled chicken">
+            <p>
+              add regular chips and a can for + £2.00 <br />
+              <br />
+              <span style="font-size: 1.5vw;">
+                &#127798; | &#127798;&#127798; |
+                &#127798;&#127798;&#127798;</span
+              >
+            </p>
+          </div>
+          <div data-name="pizza">
+            <p>
+              additional toppings are £0.50 each, you can have up to 4 <br />
+              <br />
+              10" | 12" | 14" | 16"
+            </p>
+          </div>
+          <div data-name="sides">
+            <p></p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="menu">
-      <div name="classic burgers" class="menuitem" id="menuitem1">
-        <div class="col">
-          <div class="col-title">
-            <h1>classic burgers</h1>
-          </div>
-
-          <div class="col-col1">
-            <br />
-            <h3>CHICKEN FILLET &nbsp;&nbsp;|&nbsp;&nbsp;<b>£2.75</b></h3>
-            <p>
-              chicken fillet breast piece
-            </p>
-
-            <br />
-            <h3>GRILLED CHICKEN &nbsp;&nbsp;|&nbsp;&nbsp;<b>£3.50</b></h3>
-            <p>
-              marinated breast piece cooked on a grill
-            </p>
-
-            <br />
-            <h3>1/4 POUNDER &nbsp;&nbsp;|&nbsp;&nbsp; <b>£2.80</b></h3>
-            <p>
-              4oz patty, with a cheese slice and burger sauce
-            </p>
-
-            <br />
-            <h3>1/2 POUNDER &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.80</b></h3>
-            <p>
-              two 4oz patties with two cheese slices and burger sauce
-            </p>
-          </div>
-
-          <div class="col-col2">
-            <br />
-            <h3>FISH &nbsp;&nbsp;|&nbsp;&nbsp; <b>£2.75</b></h3>
-            <p>
-              fish fillet burger served with tartar sauce
-            </p>
-            <br />
-            <h3>TOWER &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.50</b></h3>
-            <p>
-              chicken fillet breast piece with a hasbrown
-            </p>
-            <br />
-            <h3>STACKER &nbsp;&nbsp;|&nbsp;&nbsp; <b>£4.30</b></h3>
-            <p>two large beef patties with cheese, and a middle bun slice</p>
-            <br />
-            <br />
-            <h3>VEGGIE &nbsp;&nbsp;|&nbsp;&nbsp; <b>£2.50</b></h3>
-            <p>
-              a veggie patty burger
-            </p>
-          </div>
-
-          <div class="col-footer">
-            <p>
-              make it a meal (chips and a can) for +£2 &nbsp;&nbsp;|&nbsp;&nbsp;
-              prices may differ for deliveries
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div name="gourmet burgers" class="menuitem" id="menuitem2">
-        <div class="col">
-          <div class="col-title">
-            <h1>gourmet burgers</h1>
-          </div>
-
-          <div class="col-col1">
-            <br />
-            <h3>JUST CHEAT &nbsp;&nbsp;|&nbsp;&nbsp; <b>£4.00</b></h3>
-            <p>
-              6oz gourmet beef patty with cheese, served with salad and sauces
-              of your choosing in a toasted brioche bun
-            </p>
-            <br />
-            <h3>BIG CHEAT &nbsp;&nbsp;|&nbsp;&nbsp; <b>£5.50</b></h3>
-            <p>
-              double up with two 6oz gourmet beef patty with cheese, served with
-              salad and sauces of your choosing in a toasted brioche bun
-            </p>
-          </div>
-
-          <div class="col-col2">
-            <br />
-            <h3>CHICKEAT &nbsp;&nbsp;|&nbsp;&nbsp; <b>£4.50</b></h3>
-            <p>
-              grilled chicken fillet with cheese in one burger, served with
-              salad and sauces of your choosing in a toasted brioche bun
-            </p>
-            <br />
-            <h3>THE CHEAT BOX &nbsp;&nbsp;|&nbsp;&nbsp; <b>£5.50</b></h3>
-            <p>
-              cheat day deal: BIG CHEAT / CHICKEAT burger, with onion rings,
-              hashbrowns and a saucy dip
-            </p>
-          </div>
-
-          <div class="col-footer">
-            <p>
-              make it a meal (chips and a can) for +£2 &nbsp;&nbsp;|&nbsp;&nbsp;
-              prices may differ for deliveries
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div name="wraps" class="menuitem" id="menuitem3">
-        <div class="col">
-          <div class="col-title">
-            <h1>wraps</h1>
-          </div>
-
-          <div class="col-col1">
-            <br />
-            <h3>CHICKEN FILLET &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.00</b></h3>
-            <p>
-              a sliced fillet breast piece in a tortilla wrap, choice of plain
-              or spicy
-            </p>
-            <br />
-            <h3>GRILLED CHICKEN &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.50</b></h3>
-            <p>
-              a sliced grilled fillet breast piece in a tortilla wrap, choice of
-              plain, mild, medium or spicy
-            </p>
-            <br />
-            <h3>VEGGIE &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.00</b></h3>
-            <p>
-              a sliced veggie patty in a tortilla wrap
-            </p>
-          </div>
-
-          <div class="col-col2">
-            <br />
-            <h3>SEEKH KEBAB &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.50</b></h3>
-            <p>
-              a grilled seekh kebab, minced meat from a skewer
-            </p>
-            <br />
-            <h3>CHICKEN TIKKA &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.50</b></h3>
-            <p>
-              chicken tikka pieces in a tortilla wrap, choice of plain, mild,
-              medium or hot tandoori spice
-            </p>
-            <br />
-            <h3>DONER &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.00</b></h3>
-            <p>
-              doner kebab slices in a tortilla wrap, with mayo and lettuce
-            </p>
-          </div>
-
-          <div class="col-footer">
-            <p>
-              make it a meal (chips and a can) for £2 &nbsp;&nbsp;|&nbsp;&nbsp;
-              prices may differ for deliveries
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div name="kebabs" class="menuitem" id="menuitem4">
-        <div class="col">
-          <div class="col-title">
-            <h1>kebabs</h1>
-          </div>
-
-          <div class="col-col1">
-            <br />
-            <h3>REGULAR DONER &nbsp;&nbsp;|&nbsp;&nbsp; <b>£4.00</b></h3>
-            <p>
-              mixed meat doner kebab in pitta bread, with a choice of salad and
-              sauces
-            </p>
-            <br />
-            <h3>COMBO &nbsp;&nbsp;|&nbsp;&nbsp; <b>£6.00</b></h3>
-            <p>
-              regular mixed meat and chicken doner kebab in pitta bread, with a
-              choice of salad and sauces
-            </p>
-          </div>
-
-          <div class="col-col2">
-            <br />
-            <h3>MEAT &nbsp;&nbsp;|&nbsp;&nbsp; <b>£4.00</b></h3>
-            <p>
-              seekh kebab, with salad and sauce
-            </p>
-            <br />
-            <h3>CHICKEN TIKKA &nbsp;&nbsp;|&nbsp;&nbsp; <b>£4.00</b></h3>
-            <p>
-              chicken tikka kebab in pitta bread, with a choice of salad and
-              sauces
-            </p>
-          </div>
-
-          <div class="col-footer">
-            <p>
-              make it a meal (chips and a can) for £2, or make it large for an
-              extra £1.50 &nbsp;&nbsp;|&nbsp;&nbsp; prices may differ for
-              deliveries
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div name="fish and chips" class="menuitem" id="menuitem5">
-        <div class="col">
-          <div class="col-title">
-            <h1>fish and chips</h1>
-          </div>
-
-          <div class="col-col1">
-            <br />
-            <h3>COD &nbsp;&nbsp;|&nbsp;&nbsp; <b>£4.50</b></h3>
-            <p>
-              deep fried cod fillet
-            </p>
-            <br />
-            <h3>HADDOCK &nbsp;&nbsp;|&nbsp;&nbsp; <b>£4.50</b></h3>
-            <p>
-              deep fried haddock fillet
-            </p>
-            <br />
-            <h3>MASALA &nbsp;&nbsp;|&nbsp;&nbsp; <b>£4.50</b></h3>
-            <p>
-              deep fried spicy masala fish fillet
-            </p>
-          </div>
-
-          <div class="col-col2">
-            <br />
-            <h3>SCAMPI &nbsp;&nbsp;|&nbsp;&nbsp; <b>£4.50</b></h3>
-            <p>
-              8 - 10 breaded scampi pieces
-            </p>
-            <br />
-            <h3>FISH CAKE &nbsp;&nbsp;|&nbsp;&nbsp; <b>£1.50</b></h3>
-            <p>
-              1 jumbo fish cakes
-            </p>
-            <br />
-            <h3>SAUSAGE &nbsp;&nbsp;|&nbsp;&nbsp; <b>£1.50</b></h3>
-            <p>
-              jumbo chicken sausage, have it battered for 25p more
-            </p>
-          </div>
-
-          <div class="col-footer">
-            <p>
-              make it a meal (chips and a can) for £2, why not add mushy peas
-              for 50p more? &nbsp;&nbsp;|&nbsp;&nbsp; prices may differ for
-              deliveries
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div name="grilled chicken" class="menuitem" id="menuitem6">
-        <div class="col">
-          <div class="col-title">
-            <h1>grilled chicken</h1>
-            <h4>
-              lemon and herb &nbsp;|&nbsp; mild &nbsp;|&nbsp; medium
-              &nbsp;|&nbsp; hot
-            </h4>
-          </div>
-
-          <div class="col-col1">
-            <br />
-            <h3>GRILLED STRIPS &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.00</b></h3>
-            <p>
-              grilled fillet piece cut into 5 pieces
-            </p>
-            <br />
-            <br />
-            <h3>GRILLED WINGS &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.00</b></h3>
-            <p>
-              portion of 5 grilled wings
-            </p>
-          </div>
-
-          <div class="col-col2">
-            <br />
-            <h3>HALF CHICKEN &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.50</b></h3>
-            <p>
-              1/2 side breast piece and a leg piece
-            </p>
-            <br />
-            <br />
-            <h3>WHOLE CHICKEN &nbsp;&nbsp;|&nbsp;&nbsp; <b>£5.50</b></h3>
-            <p>
-              full grilled chicken cut into two breast pieces and two leg pieces
-            </p>
-          </div>
-
-          <div class="col-footer">
-            <p>
-              make it a meal (chips and a can) for £2 &nbsp;&nbsp;|&nbsp;&nbsp;
-              prices may differ for deliveries
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div name="pizzas" class="menuitem" id="menuitem7">
-        <div class="col">
-          <div class="col-title">
-            <h1>pizzas</h1>
-            <p id="pizza-prices">
-              | &nbsp 10" &nbsp | &nbsp 12" &nbsp | &nbsp 15" &nbsp | &nbsp 18"
-              &nbsp |
-            </p>
-          </div>
-
-          <div class="col-col1">
-            <br />
-            <h3>
-              MARGHERITA &nbsp | &nbsp £4 &nbsp | &nbsp £5 &nbsp | &nbsp £6
-              &nbsp | &nbsp £8 &nbsp |
-            </h3>
-            <p>tomato sauce and cheese</p>
-            <h3>
-              VEGETARIAN &nbsp | &nbsp £5 &nbsp | &nbsp £6 &nbsp | &nbsp £8
-              &nbsp | &nbsp £10 &nbsp |
-            </h3>
-            <p>
-              tomatoes, onions, peppers and mushrooms, with tomato sauce and
-              cheese
-            </p>
-            <h3>
-              CHICKEN &nbsp | &nbsp £6 &nbsp | &nbsp £7 &nbsp | &nbsp £9 &nbsp |
-              &nbsp £11 &nbsp |
-            </h3>
-            <p>
-              tomatoes, onions, peppers, mushrooms, sweetcord and jalepeno, with
-              tomato sauce and cheese
-            </p>
-            <h3>
-              HAWAIIAN &nbsp | &nbsp £6 &nbsp | &nbsp £7 &nbsp | &nbsp £9 &nbsp
-              | &nbsp £11 &nbsp |
-            </h3>
-            <p>
-              julian turkey, mushrooms and pineapple, with tomato sauce and
-              cheese
-            </p>
-          </div>
-
-          <div class="col-col2">
-            <br />
-            <h3>
-              PEPPERONI &nbsp | &nbsp £6 &nbsp | &nbsp £7 &nbsp | &nbsp £9 &nbsp
-              | &nbsp £11 &nbsp |
-            </h3>
-            <p>double pepperoni</p>
-            <h3>
-              MEXICAN &nbsp | &nbsp £6 &nbsp | &nbsp £7 &nbsp | &nbsp £9 &nbsp |
-              &nbsp £11 &nbsp |
-            </h3>
-            <p>spicy beef</p>
-            <h3>
-              KASHMIRI &nbsp | &nbsp £7 &nbsp | &nbsp £8 &nbsp | &nbsp £10 &nbsp
-              | &nbsp £12 &nbsp |
-            </h3>
-            <p>
-              tomatoes, onions, peppers, mushrooms, and chicken kebab, with
-              tomato sauce and cheese
-            </p>
-            <h3>
-              MEAT FEAST &nbsp | &nbsp £7 &nbsp | &nbsp £8 &nbsp | &nbsp £10
-              &nbsp | &nbsp £12 &nbsp |
-            </h3>
-            <p>
-              onions, peppers, julian turkey, spicy beef, chicken and pepperoni,
-              with tomato sauce and cheese
-            </p>
-          </div>
-
-          <div class="col-footer">
-            <p>
-              extra toppings: &nbsp | &nbsp 50p &nbsp | &nbsp £1 &nbsp | &nbsp
-              £1.50 &nbsp | &nbsp £2 &nbsp | &nbsp;&nbsp;&nbsp;&nbsp; prices may
-              differ for deliveries
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div name="sides" class="menuitem" id="menuitem8">
-        <div class="col">
-          <div class="col-title">
-            <h1>sides</h1>
-          </div>
-
-          <div class="col-col1">
-            <br />
-            <h3>SALAD &nbsp;&nbsp;|&nbsp;&nbsp; <b>£2.50</b></h3>
-            <p>
-              a salad mix of your choice
-            </p>
-            <br />
-            <h3>CHIPS &nbsp;&nbsp;|&nbsp;&nbsp; <b>£1.30</b></h3>
-            <p>
-              fresh potato chips, made daily on site
-            </p>
-            <br />
-            <h3>CHEESY CHIPS &nbsp;&nbsp;|&nbsp;&nbsp; <b>£2.30</b></h3>
-            <p>
-              add grated cheddar cheese to your chips
-            </p>
-            <br />
-            <h3>SAUCES &nbsp;&nbsp;|&nbsp;&nbsp; <b>£0.40</b></h3>
-            <p>
-              mild chilli, garlic, mayo, mint
-            </p>
-          </div>
-
-          <div class="col-col2">
-            <br />
-            <h3>
-              SOUTHERN FRIED STRIPS &nbsp;&nbsp;|&nbsp;&nbsp; <b>£3.00</b>
-            </h3>
-            <p>
-              portion of six
-            </p>
-            <br />
-            <h3>
-              POPCORN CHICKEN &nbsp;&nbsp;|&nbsp;&nbsp;
-              <b>£2.50</b>
-            </h3>
-            <p>
-              southern fried chicken sides
-            </p>
-            <br />
-            <h3>
-              NUGGETS &nbsp;&nbsp;|&nbsp;&nbsp;
-              <b>£2.00</b>
-            </h3>
-            <p>
-              portion of six southern fried chicken nuggets
-            </p>
-            <br />
-            <h3>
-              DRINKS
-            </h3>
-            <p>
-              cans: £0.90 &nbsp;|&nbsp; 500ml: £1.50 &nbsp;|&nbsp; 1.5ltr: £2.25
-            </p>
-          </div>
-
-          <!-- <div class="col-footer">
-            <p>example text</p>
-          </div> -->
-        </div>
-      </div>
-    </div>
-
-    <!-- make last menu item smaller vh than others -->
   </body>
 </html>

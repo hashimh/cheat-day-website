@@ -10,7 +10,14 @@ body {
   box-sizing: border-box;
 }
 
-/* NAVIGATION BAR */
+.topnav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 1vh;
+}
 #a-right {
   float: right;
 }
@@ -19,16 +26,6 @@ body {
   color: white;
   cursor: default;
 }
-.topnav {
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  padding: 1vw;
-  transition: all 0.25s ease-in-out;
-}
-
 .topnav a {
   float: left;
   display: block;
@@ -36,10 +33,10 @@ body {
   text-align: center;
   padding: 1vw 1.5vw;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   margin-right: 0.5vw;
+  transition: all 0.25s ease-in-out;
 }
-
 .topnav a:hover,
 .dropdown:hover .drop-btn {
   background-color: #ddd;
@@ -48,13 +45,13 @@ body {
   transition: all 0.5s ease;
 }
 
+.topnav a.active {
+  border-bottom: 2px solid white;
+}
+
 .topnav a.active:hover {
   background-color: #333;
   color: white;
-}
-
-.topnav a.active {
-  border-bottom: 2px solid white;
 }
 
 .topnav .icon {
@@ -67,10 +64,10 @@ body {
   overflow: hidden;
 }
 .dropdown .drop-btn {
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   border: none;
   outline: none;
-  color: white;
+  color: #f2f2f2;
   padding: 1vw 1.5vw;
   background-color: inherit;
   font-family: inherit;
@@ -127,11 +124,13 @@ body {
   height: 100vh;
 }
 
-.topview h1 {
-  padding-top: 40vh;
-  width: 100%;
-  text-align: center;
-  font-size: 8vh;
+.topview img {
+  padding-top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 30%;
+  height: auto;
 }
 
 /* FANCY ARROW CSS */
