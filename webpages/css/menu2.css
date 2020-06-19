@@ -136,10 +136,6 @@ body {
   font-family: "Courier New", Courier, monospace;
 
   display: grid;
-  /* grid-template-areas: "nav" "cont";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 9fr; */
-
   grid-template-areas: "cont nav" "cont opt";
   grid-template-columns: 70fr 30fr;
   grid-template-rows: 82fr 18fr;
@@ -152,9 +148,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* .menunav ul li {
-  margin-top: 1vh;
-} */
+
 .menunav ul li a {
   display: block;
   text-align: center;
