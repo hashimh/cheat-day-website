@@ -3,7 +3,7 @@ body {
   display: block;
   margin: 0;
   margin-top: 0;
-  font-family: "Verdana";
+  font-family: "Raleway";
 }
 
 * {
@@ -222,7 +222,7 @@ th {
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px;
   user-select: none;
   -webkit-user-select: none;
   padding: 2vw;

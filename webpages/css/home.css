@@ -3,7 +3,7 @@ body {
   display: block;
   margin: 0;
   margin-top: 0;
-  font-family: "Verdana";
+  font-family: "Raleway";
 }
 
 * {
@@ -129,7 +129,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 30%;
+  width: 25%;
   height: auto;
 }
 
