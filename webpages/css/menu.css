@@ -249,6 +249,36 @@ section h3 {
     font-size: 3vw;
     padding: 2vw 2.5vw;
   }
+
+  .menunav ul li {
+    float: left;
+  }
+  .menu {
+    grid-template-areas: "nav" "cont" "opt";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 80fr 5fr;
+  }
+
+  .menu p {
+    font-size: 2vw;
+  }
+
+  .menunav ul li a {
+    font-size: 2.5vw;
+  }
+
+  .active2 {
+    text-decoration: underline;
+    font-size: 2.5vw !important;
+  }
+
+  .menucontent div section {
+    height: 60vh;
+    width: 74vw;
+  }
+  .menucontent div section section {
+    height: 18vh;
+  }
 }
 
 /* Mobile Devices (Portait) */
