@@ -115,7 +115,6 @@ body {
 .menunav {
   grid-area: nav;
   justify-self: center;
-  padding: 1vw;
   width: 100%;
 }
 .menucontent {
