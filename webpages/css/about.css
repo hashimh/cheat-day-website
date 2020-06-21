@@ -646,7 +646,11 @@ Show the link that contains should open and close the topnav (.icon) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .topnav a {
     font-size: 3vw;
-    padding: 3vw 3.5vw;
+    padding: 2vw 2.5vw;
+  }
+  .dropdown .drop-btn {
+    font-size: 3vw;
+    padding: 2vw 2.5vw;
   }
 
   .about-block {

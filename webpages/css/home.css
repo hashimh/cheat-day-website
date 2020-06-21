@@ -224,12 +224,28 @@ iframe {
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .topnav a {
     font-size: 3vw;
-    padding: 3vw 3.5vw;
+    padding: 2vw 2.5vw;
   }
+  .dropdown .drop-btn {
+    font-size: 3vw;
+    padding: 2vw 2.5vw;
+  }
+
+  .topview img {
+    padding-top: 35vh;
+    width: 50%;
+  }
+
   .midview {
     display: block;
     text-align: center;
     height: 200vh;
+  }
+  .midview h1 {
+    font-size: 4vh;
+  }
+  .midview p {
+    font-size: 3vh;
   }
   .midmap {
     height: 62vh;
