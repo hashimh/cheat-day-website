@@ -358,15 +358,13 @@ img.hover-shadow {
 }
 
 .modalContent {
-  height: 60%;
   display: grid;
   background-color: #636363;
   padding: 3vh;
-  border: 2px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   grid-template-rows: 2fr 1fr 1fr 1fr 0.1fr;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "para para"
     "name message"
@@ -381,6 +379,10 @@ img.hover-shadow {
   grid-area: para;
   width: 100%;
 }
+.modalBox1 p {
+  margin: 0;
+}
+
 .modalBox2 {
   grid-area: name;
 }
@@ -413,16 +415,15 @@ img.hover-shadow {
 
 .emailModalInput input {
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 1.5vw;
   background-color: rgb(192, 191, 191);
   border: 2px solid rgb(192, 191, 191);
-  width: 100%;
 }
 
 .modalBox2 input,
 .modalBox3 input,
 .modalBox4 input {
-  padding: 10px;
+  padding: 0.7vw;
 }
 
 .modalBox5 {
@@ -431,14 +432,14 @@ img.hover-shadow {
   padding-left: 5vw;
 }
 .modalBox5 textarea {
-  height: 87%;
+  height: 90%;
   width: 100%;
-  font-size: 20px;
+  font-size: 1.5vw;
   background-color: rgb(192, 191, 191);
   border: 2px solid rgb(192, 191, 191);
   resize: none;
   font-family: "Verdana";
-  padding: 10px;
+  padding: 0.7vw;
 }
 
 textarea:focus,
