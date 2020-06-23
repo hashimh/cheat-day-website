@@ -306,6 +306,12 @@ img.hover-shadow {
   margin-left: auto;
   margin-right: auto;
 }
+.mobile-number {
+  font-size: 2vw;
+  font-style: italic;
+  margin-top: 0.1vh;
+  margin-bottom: 0.1vh;
+}
 
 .fa2 {
   padding: 25px;
@@ -321,6 +327,9 @@ img.hover-shadow {
 .fa2:hover {
   background-color: #333;
   color: white;
+}
+.fa-instagram {
+  margin-left: 0;
 }
 
 /* MODAL CODE */
@@ -677,7 +686,6 @@ Show the link that contains should open and close the topnav (.icon) */
 
   #about-block-img {
     display: none;
-    background-color: rgb(105, 105, 105);
   }
 
   #about-block-2 {
@@ -691,19 +699,25 @@ Show the link that contains should open and close the topnav (.icon) */
   }
 
   #about-block-3 {
-    background-color: rgb(105, 105, 105);
     font-size: 2.75vh;
   }
 
   #about-block-3 > h1 {
-    padding-top: 20vh;
+    padding-top: 10vh;
     font-size: 4vh;
+  }
+  .mobile-number {
+    font-size: 6vw;
   }
   #about-block-3 > p {
     width: 80%;
   }
   .fa2 {
-    padding: 60px;
+    padding: 4vw;
+    margin-left: 10vw;
+  }
+  .fa-instagram {
+    margin-left: 0;
   }
 
   /* MOBILE MODAL CODE */
