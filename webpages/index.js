@@ -92,21 +92,6 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-// ------------------------
-
-function modalOpened() {
-  let body = document.body;
-  body.classList.add("no-scroll");
-
-  let modal = document.getElementById("emailModal");
-  window.onclick = function (e) {
-    if (e.target == modal) {
-      window.location.href = "#close";
-      body.classList.remove("no-scroll");
-    }
-  };
-}
-
 // TODO:
 //  - send email attributes to server via nodemailer
 //  - Validate:

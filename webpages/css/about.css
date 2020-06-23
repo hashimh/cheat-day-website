@@ -6,6 +6,10 @@ body {
   font-family: "Raleway";
 }
 
+html {
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -291,11 +295,23 @@ img.hover-shadow {
   padding-top: 17.5vh;
 }
 
+.about3text {
+  grid-area: txt;
+  padding: 2vw 0 0 5vw;
+}
+.about3email {
+  grid-area: email;
+  padding: 5vw;
+}
 #about-block-3 {
   width: 100vw;
   padding-bottom: 10vh;
   font-size: 3vh;
   height: 90vh;
+
+  display: grid;
+  grid-template-areas: "txt email";
+  grid-template-columns: 1fr 1.5fr;
 }
 
 #about-block-3 > h1 {
@@ -334,41 +350,19 @@ img.hover-shadow {
 
 /* MODAL CODE */
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: grid;
-  /* justify-items: center;
-  align-items: center; */
-  pointer-events: none;
-  max-height: 0;
-  transition: max-height 500ms;
-  -webkit-transition: max-height 500ms;
-  -o-transition: max-height 500ms;
-}
-
-.modal:target {
-  max-height: 100%;
-  pointer-events: auto;
-}
-
-.no-scroll {
-  overflow: hidden;
+  /* pointer-events: none; */
+  transition: all 0.25s ease;
 }
 
 .modalContent {
   height: 60%;
   display: grid;
   background-color: #636363;
-  margin: auto;
   padding: 3vh;
   border: 2px solid black;
-  width: 60%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   grid-template-rows: 2fr 1fr 1fr 1fr 0.1fr;
@@ -415,29 +409,6 @@ img.hover-shadow {
 #errorMsg {
   padding: 1vw;
   margin: 0;
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
 }
 
 .emailModalInput input {
