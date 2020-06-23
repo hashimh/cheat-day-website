@@ -214,6 +214,8 @@ iframe {
   position: absolute;
   top: 0;
   left: 0;
+  width: 90%;
+  height: 90%;
 }
 
 #mobilePara {
@@ -288,6 +290,11 @@ iframe {
 
   #mobilePara {
     display: inline;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -421,5 +428,9 @@ iframe {
 
   #frame-container {
     height: 50vh;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 }

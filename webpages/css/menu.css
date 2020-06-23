@@ -166,7 +166,7 @@ body {
 /* menu content */
 
 .menucontent {
-  padding: 2vw;
+  padding: 1vw;
   color: white;
 }
 .menucontent .activemenu,
@@ -250,13 +250,17 @@ section h3 {
     padding: 2vw 2.5vw;
   }
 
+  .menunav ul {
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
   .menunav ul li {
-    float: left;
+    display: inline-block;
   }
   .menu {
     grid-template-areas: "nav" "cont" "opt";
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr 80fr 5fr;
+    grid-template-rows: 10fr 70fr 10fr;
   }
 
   .menu p {
@@ -278,6 +282,18 @@ section h3 {
   }
   .menucontent div section section {
     height: 18vh;
+    width: 25vw;
+    margin-right: 1vw;
+  }
+
+  .menuinfo div {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+  }
+  .menuinfo div p {
+    position: absolute;
+    left: -25%;
   }
 }
 
