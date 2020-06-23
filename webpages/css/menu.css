@@ -2,19 +2,29 @@ body {
   background-color: rgb(150, 155, 156);
   display: block;
   margin: 0;
+  padding: 0;
   margin-top: 0;
   font-family: "Raleway";
+  background-image: url("../../images/backgrounds/gourmet-background-2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
 }
 
 .topnav {
   background-color: #333;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
   padding: 1vh;
 }
@@ -102,15 +112,6 @@ body {
 }
 
 /* MENU CODE */
-.menubg {
-  background-image: url("../../images/backgrounds/gourmet-background-2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-}
 
 .menunav {
   grid-area: nav;
@@ -289,11 +290,10 @@ section h3 {
   .menuinfo div {
     position: absolute;
     left: 50%;
-    width: 100%;
   }
   .menuinfo div p {
     position: absolute;
-    left: -25%;
+    left: -80%;
   }
 }
 
