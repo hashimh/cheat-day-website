@@ -489,6 +489,7 @@ input:focus {
   background-color: rgb(192, 191, 191);
 }
 
+/* mobile */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
 Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -652,7 +653,11 @@ Show the link that contains should open and close the topnav (.icon) */
 }
 
 /* Tablet Devices (Portait and Landscape) */
-@media (min-width: 768px) and (max-width: 1024px) {
+
+/* ---------------------------------------------------------------------- */
+/* Tablet Devices (Portait) --------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
   .topnav a {
     font-size: 3vw;
     padding: 2vw 2.5vw;
@@ -762,5 +767,73 @@ Show the link that contains should open and close the topnav (.icon) */
   }
   .modalBox1 h3 {
     font-size: 2.5vh;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tablet Devices (Landscape) ------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .topnav a,
+  .dropdown .drop-btn {
+    font-size: 2vw;
+    padding: 2vw 2.5vw;
+  }
+  #about-block-1 p {
+    font-size: 2.5vw;
+    width: 80%;
+  }
+  #about-block-img h1 {
+    font-size: 4vw;
+  }
+  #about-block-img li {
+    padding: 0;
+  }
+  #about-block-img img {
+    max-height: 70%;
+    min-width: 70%;
+  }
+  .mySlides img {
+    margin-top: 19vw;
+  }
+  .prev,
+  .next {
+    top: 30%;
+  }
+  .close {
+    top: 24%;
+  }
+  #about-block-2 h1 {
+    padding-top: 8vh;
+  }
+  #about-block-2 p {
+    font-size: 2.5vw;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #about-block-2 table {
+    font-size: 3vw;
+  }
+  #about-block-3 p {
+    font-size: 2.5vw;
+  }
+  .mobile-number {
+    font-size: 4vw !important;
+  }
+  /* modal code */
+  .modalContent {
+    height: 70%;
+    width: 75%;
+  }
+  .modalBox1 h3 {
+    font-size: 2.5vw;
+  }
+  .modalBox1 p {
+    font-size: 2vw;
+  }
+  .modalBox6 input {
+    width: 11vw;
+    font-size: 3vw;
   }
 }

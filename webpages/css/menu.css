@@ -10,8 +10,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
 }
 
 * {
@@ -240,8 +238,10 @@ section h3 {
   width: 29.25%;
 }
 
-/* Tablet Devices (Portait and Landscape) */
-@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+/* ---------------------------------------------------------------------- */
+/* Tablet Devices (Portait) --------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
   .topnav a {
     font-size: 3vw;
     padding: 2vw 2.5vw;
@@ -294,6 +294,52 @@ section h3 {
   .menuinfo div p {
     position: absolute;
     left: -80%;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tablet Devices (Landscape) ------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .topnav a {
+    font-size: 2vw;
+    padding: 2vw 2.5vw;
+  }
+  .dropdown .drop-btn {
+    font-size: 2vw;
+    padding: 2vw 2.5vw;
+  }
+  .menunav ul {
+    border-bottom: 1px solid white;
+  }
+  .menunav ul li {
+    padding-top: 1vh;
+  }
+  .menunav ul li a {
+    font-size: 2vw;
+  }
+  .active2 {
+    font-size: 2.5vw !important;
+    text-decoration: underline;
+  }
+
+  .menucontent div section {
+    width: 50vw;
+  }
+  /* classic burgers smaller height sections */
+  [data-name="classic burgers"] section .item,
+  [data-name="sides"] section .item {
+    height: 14vh;
+  }
+  .menucontent div section section {
+    height: 17vh;
+    width: 24vw;
+  }
+  .menucontent div section section p {
+    font-size: 1.7vw;
+  }
+  .menuinfo p {
+    font-size: 1.5vw;
   }
 }
 
