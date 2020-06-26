@@ -120,6 +120,7 @@ th {
   margin-right: auto;
   width: 60%;
   height: 100vh;
+  overflow: hidden;
 }
 
 #about-block-1 {
@@ -297,7 +298,7 @@ img.hover-shadow {
 
 .about3text {
   grid-area: txt;
-  padding: 2vw 0 0 5vw;
+  padding: 10vh 0 0 5vw;
 }
 .about3email {
   grid-area: email;
@@ -307,7 +308,7 @@ img.hover-shadow {
   width: 100vw;
   padding-bottom: 10vh;
   font-size: 3vh;
-  height: 90vh;
+  height: 100vh;
 
   display: grid;
   grid-template-areas: "txt email";
@@ -363,7 +364,7 @@ img.hover-shadow {
   padding: 3vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  grid-template-rows: 2fr 1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 0.1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "para para"
@@ -624,8 +625,6 @@ Show the link that contains should open and close the topnav (.icon) */
   }
 }
 
-/* Tablet Devices (Portait and Landscape) */
-
 /* ---------------------------------------------------------------------- */
 /* Tablet Devices (Portait) --------------------------------------------- */
 /* ---------------------------------------------------------------------- */
@@ -692,34 +691,50 @@ Show the link that contains should open and close the topnav (.icon) */
   .fa2 {
     padding: 4vw;
     margin-left: 10vw;
+    border: 3px solid black;
   }
   .fa-instagram {
     margin-left: 0;
   }
 
-  /* MOBILE MODAL CODE */
+  #about-block-3 {
+    grid-template-areas: "txt" "email";
+    width: 100%;
+    height: 150vh;
+  }
+  .about3text {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .about3email {
+    padding: 5vh 0 0 0;
+    width: 100%;
+  }
+
   .modalContent {
     text-align: center;
     overflow-y: auto;
     height: 80vh;
     width: 80vw;
     grid-template-columns: max-content;
-    grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 2fr 1fr;
+    grid-template-rows: 0fr 0.5fr 0.5fr 0.5fr 2fr 1fr 0.3fr;
     grid-template-areas:
       "para"
       "name"
       "email"
       "subject"
       "message"
-      "send";
+      "send"
+      "errorMsg";
   }
   .modalContent div {
-    width: 72vw;
-    margin-bottom: 2px;
+    width: 71vw;
   }
   .modalContent input {
     width: 100%;
     font-size: 2.5vh;
+    padding: 1vh;
   }
   .modalBox5 {
     padding: 0%;
@@ -739,6 +754,10 @@ Show the link that contains should open and close the topnav (.icon) */
   }
   .modalBox1 h3 {
     font-size: 2.5vh;
+  }
+  textarea {
+    font-size: 2.5vh !important;
+    font-family: "Raleway" !important;
   }
 }
 
@@ -793,19 +812,60 @@ Show the link that contains should open and close the topnav (.icon) */
   .mobile-number {
     font-size: 4vw !important;
   }
+
   /* modal code */
   .modalContent {
-    height: 70%;
-    width: 75%;
+    height: 80vh;
+    width: 50vw;
+    text-align: center;
+    overflow-y: auto;
+    grid-template-columns: max-content;
+    grid-template-rows: 0fr 0.5fr 0.5fr 0.5fr 2fr 1fr 0.3fr;
+    grid-template-areas:
+      "para"
+      "name"
+      "email"
+      "subject"
+      "message"
+      "send"
+      "errorMsg";
   }
-  .modalBox1 h3 {
-    font-size: 2.5vw;
+  .modalContent div {
+    width: 45vw;
   }
-  .modalBox1 p {
-    font-size: 2vw;
+  .modalContent input {
+    width: 100%;
+    font-size: 2.5vh;
+    padding: 1vh;
+  }
+  .modalBox5 {
+    padding: 0%;
+    grid-row-start: auto;
+  }
+  .modalBox6 {
+    padding: 0%;
+    display: block;
   }
   .modalBox6 input {
-    width: 11vw;
-    font-size: 3vw;
+    padding: 2vh;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .modalBox1 p {
+    display: none;
+  }
+  .about3text {
+    width: 40vw;
+    padding: 2vh 0 0 5vw;
+  }
+  .about3email {
+    width: 60vw;
+  }
+  textarea {
+    font-size: 2.5vh !important;
+    font-family: "Raleway" !important;
+  }
+  #about-block-3 {
+    height: 90vh;
   }
 }
