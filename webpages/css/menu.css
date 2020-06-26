@@ -250,7 +250,12 @@ section h3 {
     font-size: 3vw;
     padding: 2vw 2.5vw;
   }
-
+  .topnav a.mobile-number {
+    display: none;
+  }
+  .topnav a.desktop-number {
+    float: right;
+  }
   .menunav ul {
     text-align: center;
     border-bottom: 1px solid white;
@@ -350,8 +355,8 @@ section h3 {
   .topnav a:not(.active) {
     display: none;
   }
-  .a-right {
-    float: left;
+  .topnav a.desktop-number {
+    display: none !important;
   }
   .topnav a.active {
     background-color: #333;

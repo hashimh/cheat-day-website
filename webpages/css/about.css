@@ -462,15 +462,18 @@ input:focus {
   background-color: rgb(192, 191, 191);
 }
 
-/* mobile */
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
-Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+/* ---------------------------------------------------------------------- */
+/* Mobile Devices (Portait) --------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media screen and (max-width: 600px) and (orientation: portrait) {
   .topnav a:not(.active) {
     display: none;
   }
   #a-right {
     float: left;
+  }
+  .topnav a.desktop-number {
+    display: none !important;
   }
   .topnav a.active {
     background-color: #333;
@@ -637,6 +640,12 @@ Show the link that contains should open and close the topnav (.icon) */
     font-size: 3vw;
     padding: 2vw 2.5vw;
   }
+  .topnav a.mobile-number {
+    display: none;
+  }
+  .topnav a.desktop-number {
+    float: right;
+  }
 
   .about-block {
     padding-left: 10vw;
@@ -769,6 +778,12 @@ Show the link that contains should open and close the topnav (.icon) */
   .dropdown .drop-btn {
     font-size: 2vw;
     padding: 2vw 2.5vw;
+  }
+  .topnav a.mobile-number {
+    display: none;
+  }
+  .topnav a.desktop-number {
+    float: right;
   }
   #about-block-1 p {
     font-size: 2.5vw;

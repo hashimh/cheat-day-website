@@ -234,7 +234,12 @@ iframe {
     font-size: 3vw;
     padding: 2vw 2.5vw;
   }
-
+  .topnav a.mobile-number {
+    display: none;
+  }
+  .topnav a.desktop-number {
+    float: right;
+  }
   .topview img {
     padding-top: 35vh;
     width: 50%;
@@ -316,6 +321,12 @@ iframe {
     padding-top: 35vh;
     width: 30%;
   }
+  .topnav a.mobile-number {
+    display: none;
+  }
+  .topnav a.desktop-number {
+    float: right;
+  }
   .midview {
     display: block;
     text-align: center;
@@ -344,15 +355,15 @@ iframe {
   }
 }
 
-/* Mobile Devices (Portait) */
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+/* ---------------------------------------------------------------------- */
+/* Mobile Devices (Portait) --------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media screen and (max-width: 600px) and (orientation: portrait) {
   .topnav a:not(.active) {
     display: none;
   }
-  .a-right {
-    float: left;
+  .topnav a.desktop-number {
+    display: none !important;
   }
   .topnav a.active {
     background-color: #333;
@@ -418,18 +429,22 @@ iframe {
     padding: 4vw 4.5vw;
   }
 
+  .topview img {
+    padding-top: 35vh;
+    width: 50%;
+  }
+
   .midview {
     display: block;
     text-align: center;
-    font-size: 17px;
     height: 200vh;
   }
 
   .midview h1 {
-    font-size: 2.5vh;
+    font-size: 4vh;
   }
   .midview p {
-    font-size: 2vh;
+    font-size: 3vh;
   }
 
   .midtext {
@@ -473,7 +488,7 @@ iframe {
   }
 
   #frame-container {
-    height: 50vh;
+    height: 70vh;
   }
   iframe {
     width: 100%;
