@@ -58,6 +58,17 @@ body {
   display: none;
 }
 
+.topnav a.mobile-number {
+  display: none !important;
+}
+.topnav a.desktop-number {
+  float: right;
+}
+.topnav a.desktop-number:hover {
+  background-color: #333;
+  color: white;
+  cursor: default;
+}
 /* dropdown nav code */
 .dropdown {
   float: left;
