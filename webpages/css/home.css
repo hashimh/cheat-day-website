@@ -59,7 +59,7 @@ body {
 }
 
 .topnav a.mobile-number {
-  display: none !important;
+  display: none;
 }
 .topnav a.desktop-number {
   float: right;
@@ -370,12 +370,14 @@ iframe {
 /* Mobile Devices (Portait) --------------------------------------------- */
 /* ---------------------------------------------------------------------- */
 @media screen and (max-width: 600px) and (orientation: portrait) {
+  /* mobile navigation bar code */
   .topnav a:not(.active) {
     display: none;
   }
   .topnav a.desktop-number {
     display: none !important;
   }
+
   .topnav a.active {
     background-color: #333;
   }
@@ -418,14 +420,9 @@ iframe {
     display: block;
     text-align: left;
   }
-  #a-right {
-    float: left;
-  }
-
   .topnav .dropdown {
     display: none;
   }
-
   .topnav.responsive .dropdown {
     float: none;
     display: block;
@@ -439,6 +436,7 @@ iframe {
     font-size: 4vw;
     padding: 4vw 4.5vw;
   }
+  /* --------------- */
 
   .topview img {
     padding-top: 35vh;
