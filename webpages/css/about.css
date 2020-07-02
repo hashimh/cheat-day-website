@@ -584,7 +584,7 @@ input:focus {
     padding: 0;
   }
   #about-block-3 h1 {
-    padding-top: 15vh;
+    padding-top: 5vh;
     font-size: 4vh;
   }
 
@@ -592,30 +592,46 @@ input:focus {
     font-size: 2.25vh;
   }
 
+  #about-block-3 {
+    grid-template-areas: "txt" "email";
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 150vh;
+  }
+  .about3text {
+    padding: 0 10vw 0 10vw;
+    width: 100%;
+    text-align: center;
+  }
+
   /* MOBILE MODAL CODE */
   .modalContent {
     text-align: center;
     overflow-y: auto;
     height: 80vh;
-    width: 80vw;
+    width: 90vw;
     grid-template-columns: max-content;
-    grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 2fr 1fr;
+    grid-template-rows: 0fr 0.5fr 0.5fr 0.5fr 2fr 1fr 0.3fr;
     grid-template-areas:
       "para"
       "name"
       "email"
       "subject"
       "message"
-      "send";
+      "send"
+      "errorMsg";
   }
   .modalContent div {
     width: 68vw;
     margin-bottom: 2px;
   }
-  .modalContent input {
-    width: 100%;
+  .modalContent input,
+  .modalContent textarea {
+    width: 77vw;
     font-size: 2.5vh;
+    padding: 1vh;
   }
+
   .modalBox5 {
     padding: 0%;
     grid-row-start: auto;
@@ -623,6 +639,7 @@ input:focus {
   .modalBox6 {
     padding: 0%;
     display: block;
+    text-align: center;
   }
   .modalBox6 input {
     padding: 2vh;
@@ -631,6 +648,7 @@ input:focus {
   .g-recaptcha {
     transform: scale(0.83);
     transform-origin: 0 0;
+    margin-left: 4vw;
   }
   .modalBox1 p {
     display: none;
