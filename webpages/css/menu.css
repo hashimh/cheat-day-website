@@ -67,7 +67,7 @@ body {
 }
 
 .topnav a.mobile-number {
-  display: none !important;
+  display: none;
 }
 .topnav a.desktop-number {
   float: right;
@@ -360,10 +360,10 @@ section h3 {
   }
 }
 
-/* Mobile Devices (Portait) */
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+/* ---------------------------------------------------------------------- */
+/* Mobile Devices (Portait) --------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media screen and (max-width: 600px) and (orientation: portrait) {
   .topnav a:not(.active) {
     display: none;
   }
@@ -432,5 +432,47 @@ section h3 {
     text-align: left;
     font-size: 4vw;
     padding: 4vw 4.5vw;
+  }
+
+  /* MENU CSS */
+  .menunav ul {
+    text-align: center;
+    margin-bottom: 1px solid white;
+  }
+  .menunav ul li {
+    display: inline-block;
+  }
+  .menu {
+    grid-template-areas: "nav" "cont" "opt";
+    grid-template-columns: 1fr;
+    grid-template-rows: 10fr 70fr 10fr;
+  }
+  .menu p {
+    font-size: 2.5vw;
+  }
+  .menunav ul li a {
+    font-size: 2.5vw;
+  }
+  .active2 {
+    text-decoration: underline;
+    font-size: 2.5vw !important;
+  }
+  .menucontent div section {
+    height: 60vh;
+    width: 80vh;
+  }
+  .menucontent div section section {
+    height: 15vh;
+    width: 30vw;
+    margin-right: 1vh;
+  }
+  .menucontent div[data-name="classic burgers"] section section,
+  .menucontent div[data-name="sides"] section section {
+    height: 12vh;
+  }
+  .menuinfo div {
+    position: absolute;
+    left: 18%;
+    width: 65%;
   }
 }

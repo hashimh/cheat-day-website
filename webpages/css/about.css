@@ -63,7 +63,7 @@ html {
 }
 
 .topnav a.mobile-number {
-  display: none !important;
+  display: none;
 }
 .topnav a.desktop-number {
   float: right;
