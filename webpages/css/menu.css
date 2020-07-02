@@ -445,31 +445,54 @@ section h3 {
   .menu {
     grid-template-areas: "nav" "cont" "opt";
     grid-template-columns: 1fr;
-    grid-template-rows: 10fr 70fr 10fr;
+    grid-template-rows: 10fr 75fr 7fr;
   }
   .menu p {
     font-size: 2.5vw;
   }
   .menunav ul li a {
-    font-size: 2.5vw;
+    font-size: 2.9vw;
   }
   .active2 {
     text-decoration: underline;
-    font-size: 2.5vw !important;
+    font-size: 2.9vw !important;
+  }
+  .menucontent {
+    padding: 0vw 2vw 0vw 2vw;
   }
   .menucontent div section {
     height: 60vh;
-    width: 80vh;
+    width: 76.5vw;
   }
   .menucontent div section section {
     height: 15vh;
-    width: 30vw;
+    width: 36.25vw;
     margin-right: 1vh;
   }
+
+  /* max content sections */
   .menucontent div[data-name="classic burgers"] section section,
   .menucontent div[data-name="sides"] section section {
     height: 12vh;
   }
+  /* min content sections */
+  .menucontent div[data-name="gourmet burgers"] section,
+  .menucontent div[data-name="kebabs"] section,
+  .menucontent div[data-name="grilled chicken"] section,
+  .menucontent div[data-name="fish and chips"] section {
+    width: 37.5vw;
+    margin-left: 27%;
+  }
+  .menucontent div[data-name="gourmet burgers"] section section,
+  .menucontent div[data-name="kebabs"] section section,
+  .menucontent div[data-name="grilled chicken"] section section,
+  .menucontent div[data-name="fish and chips"] section section {
+    height: 10vh;
+    width: 37.5vw;
+    text-align: center;
+  }
+  /* medium content section */
+
   .menuinfo div {
     position: absolute;
     left: 18%;
