@@ -436,7 +436,6 @@ iframe {
     font-size: 4vw;
     padding: 4vw 4.5vw;
   }
-  /* --------------- */
 
   .topview img {
     padding-top: 35vh;
@@ -524,8 +523,8 @@ iframe {
   }
   /* home content css */
   .topview img {
-    padding-top: 25vh;
-    width: 35%;
+    padding-top: 30vh;
+    width: 30%;
   }
   .arrow span {
     width: 20px;
@@ -537,7 +536,9 @@ iframe {
   .midview {
     display: block;
     text-align: center;
-    height: 190vh;
+  }
+  .midview div {
+    padding: 4vw 6vw 0vw 6vw;
   }
   .midview h1 {
     font-size: 8vh;
@@ -549,6 +550,9 @@ iframe {
   }
   iframe {
     width: 100%;
-    height: 70%;
+    height: 70vh;
+  }
+  #frame-container {
+    height: auto;
   }
 }
