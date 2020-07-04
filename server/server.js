@@ -16,7 +16,7 @@ app.use("/", (req, res, next) => {
 app.use("/", express.static(webpagesPath));
 app.use("/images", express.static(imagesPath));
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../webpages/" + "home.html"));
 });
 
@@ -37,8 +37,8 @@ function sendMail(req, res) {
     secure: true,
     auth: {
       user: GMAIL_USER,
-      pass: GMAIL_PASS
-    }
+      pass: GMAIL_PASS,
+    },
   });
 
   let mailOpts = {
@@ -51,7 +51,7 @@ function sendMail(req, res) {
       ", via " +
       req.query.email +
       ":\n\n" +
-      req.query.message
+      req.query.message,
   };
 
   smtpTrans.sendMail(mailOpts, (error, response) => {
@@ -62,3 +62,6 @@ function sendMail(req, res) {
     }
   });
 }
+
+// <!-- LOCALHOST SITE KEY: 6Le2QdsUAAAAADkXa6LUrknHARcIPGMqreb4ZVsW -->
+// <!-- CHEATDAY.UK SITE KEY: 6Lcff9sUAAAAAHjNVe8pM9Y9qtVdnOcF2weJcnp4 -->

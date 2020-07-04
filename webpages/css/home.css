@@ -504,3 +504,51 @@ iframe {
     height: 100%;
   }
 }
+
+/* ---------------------------------------------------------------------- */
+/* Mobile Devices (Landscape) ------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  /* navigation bar css */
+  .topnav a,
+  .dropdown .drop-btn {
+    font-size: 3vw;
+    padding: 2vw 2.5vw;
+  }
+  .topnav a.desktop-number {
+    display: none !important;
+  }
+  .topnav a.mobile-number {
+    float: right;
+    display: block;
+  }
+  /* home content css */
+  .topview img {
+    padding-top: 25vh;
+    width: 35%;
+  }
+  .arrow span {
+    width: 20px;
+    height: 20px;
+  }
+  #span1 {
+    display: none;
+  }
+  .midview {
+    display: block;
+    text-align: center;
+    height: 190vh;
+  }
+  .midview h1 {
+    font-size: 8vh;
+    margin-bottom: 10px;
+  }
+  .midview p {
+    font-size: 6vh;
+    margin-top: 0;
+  }
+  iframe {
+    width: 100%;
+    height: 70%;
+  }
+}
