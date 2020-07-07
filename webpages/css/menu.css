@@ -499,3 +499,62 @@ section h3 {
     width: 65%;
   }
 }
+
+/* ---------------------------------------------------------------------- */
+/* Mobile Devices (Landscape) ------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body {
+    height: 100vh;
+  }
+  .topnav a,
+  .dropdown .drop-btn {
+    font-size: 3vw;
+    padding: 2vw 2.5vw;
+  }
+
+  /* MENU CSS */
+
+  .menunav {
+    position: fixed;
+    width: inherit;
+    padding-right: 2vw;
+  }
+  .menunav ul li a {
+    font-size: 2vw;
+    text-align: right;
+  }
+  .active2 {
+    font-size: 2vw !important;
+    text-decoration: underline;
+  }
+  .menuinfo {
+    position: relative;
+    display: none;
+  }
+  .menuinfo div {
+    width: 100%;
+    font-size: 1.5vw !important;
+  }
+  .menucontent div section {
+    display: block;
+  }
+  .menucontent div section section {
+    width: 80%;
+    height: 20vh;
+    margin: 0;
+  }
+
+  .menu {
+    grid-template-areas: "cont nav";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    top: 20vh;
+    width: 95vw;
+    overflow-y: scroll;
+  }
+
+  .menu p {
+    font-size: 2vw;
+  }
+}
