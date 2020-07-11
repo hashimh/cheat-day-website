@@ -659,6 +659,115 @@ input:focus {
 }
 
 /* ---------------------------------------------------------------------- */
+/* Mobile Devices (Landscape) ------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  /* Navigation Bar */
+  .topnav a,
+  .dropdown .drop-btn {
+    font-size: 3vw;
+    padding: 2vw 2.5vw;
+  }
+  .topnav a.desktop-number {
+    display: none;
+  }
+  .topnav a.mobile-number {
+    float: right;
+    display: block;
+  }
+
+  /* About Content 1 */
+  #about-block-1 {
+    height: 150vh;
+  }
+  #about-block-1 p {
+    font-size: 6vh;
+    width: 90%;
+  }
+  #about-block-1 h1 {
+    font-size: 8vh;
+  }
+
+  /* About Content Gallery */
+  #about-block-img img {
+    max-height: 95%;
+    min-width: 70%;
+  }
+  .mySlides img {
+    margin-top: 12vw;
+  }
+  .prev,
+  .next {
+    top: 40%;
+  }
+  .close {
+    top: 18%;
+  }
+
+  /* About Content 2 */
+  #about-block-2 {
+    height: 150vh;
+  }
+  #about-block-2 h1 {
+    font-size: 8vh;
+    margin-top: 1vh;
+    padding-top: 5vh;
+  }
+  #about-block-2 p {
+    font-size: 6vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #about-block-2 table {
+    font-size: 6vh;
+  }
+
+  /* About Content 3 */
+  #about-block-3 {
+    grid-template-areas: "txt" "email";
+    height: 200vh;
+  }
+  #about-block-3 h1 {
+    font-size: 8vh;
+  }
+  #about-block-3 p {
+    font-size: 6vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-number {
+    font-size: 6vh !important;
+  }
+  .about3text {
+    padding: 0;
+  }
+  .modalContent {
+    text-align: center;
+    height: 80vh;
+    width: 90vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 1fr 0.5fr;
+    grid-template-areas:
+      "name"
+      "email"
+      "subject"
+      "message"
+      "send"
+      "errorMsg";
+  }
+  .modalBox1 {
+    display: none;
+  }
+  .emailModalInput input {
+    width: 100%;
+    font-size: 2vw;
+    padding: 1vw;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
 /* Tablet Devices (Portait) --------------------------------------------- */
 /* ---------------------------------------------------------------------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
