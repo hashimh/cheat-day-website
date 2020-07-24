@@ -270,7 +270,6 @@ section h3 {
   }
   .menunav ul {
     text-align: center;
-    border-bottom: 1px solid white;
   }
   .menunav ul li {
     display: inline-block;
@@ -326,9 +325,7 @@ section h3 {
     font-size: 2vw;
     padding: 2vw 2.5vw;
   }
-  .menunav ul {
-    border-bottom: 1px solid white;
-  }
+
   .menunav ul li {
     padding-top: 1vh;
   }
@@ -480,15 +477,15 @@ section h3 {
   .menucontent div[data-name="kebabs"] section,
   .menucontent div[data-name="grilled chicken"] section,
   .menucontent div[data-name="fish and chips"] section {
-    width: 37.5vw;
-    margin-left: 27%;
+    width: 40vw;
+    margin-left: 22%;
   }
   .menucontent div[data-name="gourmet burgers"] section section,
   .menucontent div[data-name="kebabs"] section section,
   .menucontent div[data-name="grilled chicken"] section section,
   .menucontent div[data-name="fish and chips"] section section {
     height: 10vh;
-    width: 37.5vw;
+    width: 40vw;
     text-align: center;
   }
   /* medium content section */
