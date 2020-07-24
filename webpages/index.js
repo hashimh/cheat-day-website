@@ -92,13 +92,6 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-// TODO:
-//  - send email attributes to server via nodemailer
-//  - Validate:
-//      - name
-//      - email
-//      - recaptcha
-
 function emailValidate(email) {
   // validate email
   let emailIn = document.getElementById("userEmail");
