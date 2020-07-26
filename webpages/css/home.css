@@ -347,7 +347,7 @@ iframe {
     font-size: 4vw;
   }
   .midview p {
-    font-size: 3vw;
+    font-size: 3vw !important;
   }
   .midtext {
     height: 100vh;
