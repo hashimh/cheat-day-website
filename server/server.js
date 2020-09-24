@@ -4,7 +4,6 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const nodemailer = require("nodemailer");
-require("dotenv").config();
 
 const webpagesPath = path.join(__dirname, "../webpages");
 const imagesPath = path.join(__dirname, "../images");
