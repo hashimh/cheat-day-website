@@ -204,14 +204,13 @@ async function sendBtnClicked() {
               messageIn.style.border = "2px solid rgb(192, 191, 191)";
             }
 
-            errorMsg.innerHTML =
-              "your feedback has been submitted, please expect questions to be answered within a week.";
+            errorMsg.innerHTML = "your feedback has been submitted";
             errorDiv.style.backgroundColor = "#FDFD96";
 
             setTimeout(function () {
               // Clear modal content and close modal
               errorMsg.innerHTML = "";
-              errorDiv.style.backgroundColor = "rgb(192, 191, 191)";
+              errorDiv.style.backgroundColor = "#636363";
               window.location.href = "#close";
               let body = document.body;
               body.classList.remove("no-scroll");

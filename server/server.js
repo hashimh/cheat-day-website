@@ -61,6 +61,3 @@ function sendMail(req, res) {
     }
   });
 }
-
-// <!-- LOCALHOST SITE KEY: 6Le2QdsUAAAAADkXa6LUrknHARcIPGMqreb4ZVsW -->
-// <!-- CHEATDAY.UK SITE KEY: 6Lcff9sUAAAAAHjNVe8pM9Y9qtVdnOcF2weJcnp4 -->
