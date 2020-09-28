@@ -311,6 +311,10 @@ section h3 {
     position: absolute;
     left: -80%;
   }
+
+  .menucontent div #sides-section section {
+    height: 15vh;
+  }
 }
 
 /* ---------------------------------------------------------------------- */
