@@ -369,6 +369,10 @@ section h3 {
 /* Mobile Devices (Portait) --------------------------------------------- */
 /* ---------------------------------------------------------------------- */
 @media screen and (max-width: 600px) and (orientation: portrait) {
+  body {
+    background-position: right;
+  }
+
   .topnav a:not(.active) {
     display: none;
   }
