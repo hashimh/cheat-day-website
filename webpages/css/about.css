@@ -567,9 +567,46 @@ input:focus {
     padding-top: 0.5vh;
   }
 
-  #about-block-img {
+  /* #about-block-img{
     display: none;
-    background-color: rgb(105, 105, 105);
+  } */
+
+  #about-block-img img,
+  .about-2-gallery li {
+    max-height: 90%;
+    min-width: 50%;
+  }
+  .about-2-gallery li {
+    height: 15vh;
+  }
+  .about-2-gallery img {
+    flex-wrap: wrap;
+  }
+  .about-2-gallery {
+    margin: 0;
+    height: auto;
+  }
+
+  /* IMAGE FULLSCREEN MODAL */
+  .mySlides img {
+    padding-top: 27vh;
+    width: 90%;
+  }
+  .prev,
+  .next {
+    top: 46vh;
+    height: 8vh;
+    width: 15vw;
+  }
+  .prev {
+    left: 6vw;
+  }
+  .next {
+    right: 6vw;
+  }
+  .close {
+    top: 30vh;
+    right: 6vw;
   }
 
   #about-block-2 > table {
