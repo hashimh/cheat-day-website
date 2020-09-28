@@ -308,12 +308,16 @@ section h3 {
     left: 50%;
   }
   .menuinfo div p {
-    position: absolute;
-    left: -80%;
+    position: relative;
+    width: 75vw;
+    left: -37vw;
   }
 
   .menucontent div #sides-section section {
     height: 15vh;
+  }
+  #menuinfoul div[data-name="grilled chicken"] {
+    margin-top: -2vh;
   }
 }
 
