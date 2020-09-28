@@ -586,6 +586,10 @@ input:focus {
     margin: 0;
     height: auto;
   }
+  #about-block-img {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
 
   /* IMAGE FULLSCREEN MODAL */
   .mySlides img {
