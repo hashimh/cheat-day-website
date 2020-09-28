@@ -148,7 +148,7 @@ body {
   display: grid;
   grid-template-areas: "cont nav" "cont opt";
   grid-template-columns: 70fr 30fr;
-  grid-template-rows: 82fr 18fr;
+  grid-template-rows: 75fr 25fr;
 }
 
 .menunav ul {
