@@ -446,7 +446,7 @@ section h3 {
   .menu {
     grid-template-areas: "nav" "cont" "opt";
     grid-template-columns: 1fr;
-    grid-template-rows: 10fr 75fr 7fr;
+    grid-template-rows: 10fr 75fr 10fr;
   }
   .menu p {
     font-size: 2.5vw;
@@ -474,7 +474,7 @@ section h3 {
   /* max content sections */
   .menucontent div[data-name="classic burgers"] section section,
   .menucontent div[data-name="sides"] section section {
-    height: 12vh;
+    height: 11vh;
   }
   /* min content sections */
   .menucontent div[data-name="gourmet burgers"] section,
@@ -498,6 +498,22 @@ section h3 {
     position: absolute;
     left: 18%;
     width: 65%;
+  }
+
+  /* custom css for style anomolies */
+  .menucontent div[data-name="kebabs"] section {
+    height: 50vh;
+  }
+  #menuinfoul div[data-name="kebabs"],
+  #menuinfoul div[data-name="fish and chips"] {
+    margin-top: -2vh;
+  }
+  #menuinfoul div[data-name="grilled chicken"] {
+    margin-top: -3vh;
+  }
+
+  .menucontent div[data-name="fish and chips"] section section {
+    height: 9vh;
   }
 }
 
