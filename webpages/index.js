@@ -256,19 +256,7 @@ function changeMenu(obj) {
 }
 
 // Alert Modal Code
-
-// let loadModal = function () {
-//   alert("hi");
-//   if (localStorage.length < 1) {
-//     document.getElementById("alert-modal").style.display = "block";
-//   } else {
-//     document.getElementById("alert-modal").style.display = "none";
-//   }
-// };
-
 function closeAlert() {
   document.getElementById("alert-modal").style.display = "none";
   document.body.style.overflow = "auto";
 }
-
-// window.addEventListener("load", loadModal, false);
