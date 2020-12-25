@@ -10,9 +10,9 @@ function navFunction() {
 }
 
 // FUNCTION TO RESET PAGE LOCATION ON REFRESH
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// };
 
 // FUNCTION FOR DOWN ARROW ON HOMEPAGE
 function homepageDown() {
@@ -254,3 +254,21 @@ function changeMenu(obj) {
     }
   }
 }
+
+// Alert Modal Code
+
+// let loadModal = function () {
+//   alert("hi");
+//   if (localStorage.length < 1) {
+//     document.getElementById("alert-modal").style.display = "block";
+//   } else {
+//     document.getElementById("alert-modal").style.display = "none";
+//   }
+// };
+
+function closeAlert() {
+  document.getElementById("alert-modal").style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+// window.addEventListener("load", loadModal, false);

@@ -124,5 +124,28 @@
         </div>
       </div>
     </div>
+
+    <div id="alert-modal" class="modal">
+      <div class="modalContent">
+        <span id="closeSpan" onclick="closeAlert()" class="modal-span"
+          >&times;</span
+        >
+        <h2>Dear Customers</h2>
+        <h3>We will be closed from the 25th of December onwards</h3>
+        <h4>Apologies for any inconveniences</h4>
+      </div>
+    </div>
   </body>
 </html>
+
+<script>
+  window.onload = function () {
+    if (sessionStorage.getItem("shownModal") == null) {
+      document.getElementById("alert-modal").style.display = "block";
+      document.body.style.overflow = "hidden";
+      sessionStorage.setItem("shownModal", 1);
+    } else {
+      document.getElementById("alert-modal").style.display = "none";
+    }
+  };
+</script>
