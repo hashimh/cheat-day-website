@@ -342,7 +342,7 @@ img.hover-shadow {
 }
 
 .fa2 {
-  padding: 25px;
+  padding: 5px;
   font-size: 25px;
   text-decoration: none;
   color: black;
@@ -352,13 +352,18 @@ img.hover-shadow {
   transition: all 0.5s ease;
 }
 
-.fa2:hover {
-  background-color: #333;
-  color: white;
-}
 .fa-instagram {
   margin-left: 0;
+  border: none;
 }
+
+.contactforms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
 
 /* MODAL CODE */
 .modal {
