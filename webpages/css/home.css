@@ -203,7 +203,7 @@ body {
 }
 
 .midview div {
-  padding: 8vw 6vw 8vw 6vw;
+  padding: 8vw;
   padding-bottom: 0;
 }
 
@@ -225,8 +225,8 @@ iframe {
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 #mobilePara {
@@ -269,161 +269,6 @@ iframe {
 }
 .modal-span:hover {
   transform: scale(1.5);
-}
-
-/* ---------------------------------------------------------------------- */
-/* Tablet Devices (Portait) --------------------------------------------- */
-/* ---------------------------------------------------------------------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
-  .topnav a {
-    font-size: 3vw;
-    padding: 2vw 2.5vw;
-  }
-  .dropdown .drop-btn {
-    font-size: 3vw;
-    padding: 2vw 2.5vw;
-  }
-  .topnav a.mobile-number {
-    display: none;
-  }
-  .topnav a.desktop-number {
-    float: right;
-  }
-  .topview img {
-    padding-top: 35vh;
-    width: 50%;
-  }
-
-  .midview {
-    display: block;
-    text-align: center;
-    height: 192vh;
-  }
-  .midview h1 {
-    font-size: 4vh;
-  }
-  .midview p {
-    font-size: 3vh;
-  }
-  .midmap {
-    height: 55vh;
-  }
-
-  .midtext {
-    height: 100vh;
-    border-bottom: 5px solid black;
-  }
-
-  .midtext h1 {
-    padding-top: 8vh;
-    padding-bottom: 2vh;
-  }
-
-  .midmap {
-    height: 90vh;
-    bottom: 0;
-  }
-
-  .midmap > * {
-    padding-top: 4vh;
-  }
-
-  .midmap > h1 {
-    padding-bottom: 4vh;
-  }
-
-  .midmap > p {
-    padding-top: 1vh;
-  }
-
-  #frame-container {
-    height: 60vh;
-  }
-
-  #span1 {
-    display: none;
-  }
-
-  #mobilePara {
-    display: inline;
-  }
-
-  iframe {
-    width: 100%;
-    height: 100%;
-  }
-
-  /* Alert Modal Code */
-  .modalContent {
-    margin: 50% auto;
-    font-size: 2.5vh;
-    width: 75%;
-  }
-  .modal-span {
-    font-size: 6vh;
-    right: 4vw;
-  }
-}
-
-/* ---------------------------------------------------------------------- */
-/* Tablet Devices (Landscape) ------------------------------------------- */
-/* ---------------------------------------------------------------------- */
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .topnav a {
-    font-size: 2vw;
-    padding: 2vw 2.5vw;
-  }
-  .dropdown .drop-btn {
-    font-size: 2vw;
-    padding: 2vw 2.5vw;
-  }
-  .topview img {
-    padding-top: 35vh;
-    width: 30%;
-  }
-  .topnav a.mobile-number {
-    display: none;
-  }
-  .topnav a.desktop-number {
-    float: right;
-  }
-  .midview {
-    display: block;
-    text-align: center;
-    height: 200vh;
-  }
-  .midview h1 {
-    font-size: 4vw;
-  }
-  .midview p {
-    font-size: 3vw !important;
-  }
-  .midtext {
-    height: 100vh;
-    border-bottom: 5px solid black;
-  }
-  .midmap h1 {
-    padding-top: 6vh;
-  }
-  #mobilePara {
-    display: inline;
-  }
-  iframe {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 6vh;
-  }
-
-  /* Alert Modal Code */
-  .modalContent {
-    margin: 30% auto;
-    font-size: 2.5vw;
-    width: 75%;
-  }
-  .modal-span {
-    font-size: 6vw;
-    right: 3vw;
-  }
 }
 
 /* ---------------------------------------------------------------------- */
@@ -616,7 +461,7 @@ iframe {
     margin-bottom: 10px;
   }
   .midview p {
-    font-size: 6vh;
+    font-size: 5vh;
     margin-top: 0;
   }
   iframe {
@@ -630,6 +475,165 @@ iframe {
   /* Alert Modal Code */
   .modalContent {
     margin: 18% auto;
+    font-size: 2.5vw;
+    width: 75%;
+  }
+  .modal-span {
+    font-size: 6vw;
+    right: 3vw;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tablet Devices (Portait) --------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+  .topnav a {
+    font-size: 3vw;
+    padding: 2vw 2.5vw;
+  }
+  .dropdown .drop-btn {
+    font-size: 3vw;
+    padding: 2vw 2.5vw;
+  }
+  .topnav a.mobile-number {
+    display: none;
+  }
+  .topnav a.desktop-number {
+    float: right;
+  }
+  .topview img {
+    padding-top: 35vh;
+    width: 50%;
+  }
+
+  .midview {
+    display: block;
+    text-align: center;
+    height: 192vh;
+  }
+  .midview h1 {
+    font-size: 4vh;
+  }
+  .midview p {
+    font-size: 3vh;
+  }
+  .midmap {
+    height: 55vh;
+  }
+
+  .midtext {
+    height: 100vh;
+    border-bottom: 5px solid black;
+  }
+
+  .midtext h1 {
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+  }
+
+  .midmap {
+    height: 90vh;
+    bottom: 0;
+  }
+
+  .midmap > * {
+    padding-top: 4vh;
+  }
+
+  .midmap > h1 {
+    padding-bottom: 4vh;
+  }
+
+  .midmap > p {
+    padding-top: 1vh;
+  }
+
+  #frame-container {
+    height: 60vh;
+  }
+
+  #span1 {
+    display: none;
+  }
+
+  #mobilePara {
+    display: inline;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Alert Modal Code */
+  .modalContent {
+    margin: 50% auto;
+    font-size: 2.5vh;
+    width: 75%;
+  }
+  .modal-span {
+    font-size: 6vh;
+    right: 4vw;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tablet Devices (Landscape) ------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .topnav a {
+    font-size: 1.75vw;
+    padding: 2vw 2.5vw;
+  }
+  .dropdown .drop-btn {
+    font-size: 2vw;
+    padding: 2vw 2.5vw;
+  }
+  .topview img {
+    padding-top: 35vh;
+    width: 30%;
+  }
+  .topnav a.mobile-number {
+    display: none;
+  }
+  .topnav a.desktop-number {
+    float: right !important;
+    display: block !important;
+  }
+  .midview {
+    display: block;
+    text-align: center;
+    height: 200vh;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .midview h1 {
+    font-size: 4vw;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+  }
+  .midview p {
+    font-size: 2.5vw;
+  }
+  .midtext {
+    height: 100vh;
+    border-bottom: 5px solid black;
+  }
+  .midmap h1 {
+    padding-top: 6vh;
+  }
+  #mobilePara {
+    display: inline;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Alert Modal Code */
+  .modalContent {
+    margin: 30% auto;
     font-size: 2.5vw;
     width: 75%;
   }
