@@ -342,7 +342,7 @@ img.hover-shadow {
 }
 
 .fa2 {
-  padding: 25px;
+  padding: 5px;
   font-size: 25px;
   text-decoration: none;
   color: black;
@@ -352,13 +352,18 @@ img.hover-shadow {
   transition: all 0.5s ease;
 }
 
-.fa2:hover {
-  background-color: #333;
-  color: white;
-}
 .fa-instagram {
   margin-left: 0;
+  border: none;
 }
+
+.contactforms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
 
 /* MODAL CODE */
 .modal {
@@ -631,6 +636,12 @@ input:focus {
   #about-block-3 p {
     font-size: 2.25vh;
   }
+  .mobile-number {
+    font-size: 3.5vh !important;
+  }
+  .contactforms {
+    grid-template-columns: 2fr 1fr;
+  }
 
   #about-block-3 {
     grid-template-areas: "txt" "email";
@@ -792,7 +803,7 @@ input:focus {
     text-align: center;
     height: 80vh;
     width: 90vw;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 1fr 0.5fr;
     grid-template-areas:
       "name"
@@ -800,7 +811,16 @@ input:focus {
       "subject"
       "message"
       "send"
-      "errorMsg";
+      "errorMsg"; */
+      grid-template-rows: 10fr 10fr 10fr 5fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "name message"
+        "email message"
+        "subject message"
+        "errorMsg send";
+    
+      overflow-y: hidden;
   }
   .modalBox1 {
     display: none;
@@ -809,6 +829,9 @@ input:focus {
     width: 100%;
     font-size: 2vw;
     padding: 1vw;
+  }
+  #mailMessage {
+    font-size: 2vw;
   }
 }
 
@@ -916,9 +939,8 @@ input:focus {
     width: 80%;
   }
   .fa2 {
-    padding: 4vw;
     margin-left: 10vw;
-    border: 3px solid black;
+    border: none;
   }
   .fa-instagram {
     margin-left: 0;
@@ -991,6 +1013,7 @@ input:focus {
 /* ---------------------------------------------------------------------- */
 /* Tablet Devices (Landscape) ------------------------------------------- */
 /* ---------------------------------------------------------------------- */
+/* fix modal display for landscape tablet */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .topnav a,
   .dropdown .drop-btn {
