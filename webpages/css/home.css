@@ -229,10 +229,6 @@ iframe {
   height: 100%;
 }
 
-#mobilePara {
-  display: none;
-}
-
 /* ALERT MODAL CODE */
 .modal {
   display: none;
@@ -389,10 +385,6 @@ iframe {
 
   #span1 {
     display: none;
-  }
-
-  #mobilePara {
-    display: inline;
   }
 
   .arrow span {
@@ -557,10 +549,6 @@ iframe {
     display: none;
   }
 
-  #mobilePara {
-    display: inline;
-  }
-
   iframe {
     width: 100%;
     height: 100%;
@@ -623,9 +611,7 @@ iframe {
   .midmap h1 {
     padding-top: 6vh;
   }
-  #mobilePara {
-    display: inline;
-  }
+
   iframe {
     width: 100%;
     height: 100%;
