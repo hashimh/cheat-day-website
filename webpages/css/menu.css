@@ -325,12 +325,9 @@ section h3 {
 /* Tablet Devices (Landscape) ------------------------------------------- */
 /* ---------------------------------------------------------------------- */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .topnav a {
-    font-size: 2vw;
-    padding: 2vw 2.5vw;
-  }
+  .topnav a,
   .dropdown .drop-btn {
-    font-size: 2vw;
+    font-size: 2vw !important;
     padding: 2vw 2.5vw;
   }
 

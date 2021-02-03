@@ -571,7 +571,7 @@ iframe {
 /* ---------------------------------------------------------------------- */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .topnav a {
-    font-size: 1.75vw;
+    font-size: 2vw;
     padding: 2vw 2.5vw;
   }
   .dropdown .drop-btn {

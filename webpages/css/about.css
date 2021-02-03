@@ -879,18 +879,17 @@ input:focus {
   }
 
   #about-block-1 {
-    padding-top: 15vw;
+    padding-top: 10vh;
   }
 
   #about-block-1 > h1 {
     font-size: 4vh;
-    padding-top: 7vh;
   }
   #about-block-1 > p {
     line-height: 1.2;
     width: 100%;
     padding-top: 2vh;
-    font-size: 2.75vh;
+    font-size: 3vh;
   }
 
   /* gallery */
@@ -900,7 +899,7 @@ input:focus {
   .about-2-gallery {
     flex-wrap: wrap;
     width: 100%;
-    margin: 0;
+    margin: 5vh 0 0 0;
     padding: 0;
   }
   .about-2-gallery li {
@@ -932,12 +931,12 @@ input:focus {
   }
 
   #about-block-2 {
-    font-size: 2.75vh;
+    font-size: 2vh;
   }
-  #about-block-2 > h1 {
+  #about-block-2 h1 {
     font-size: 4vh;
   }
-  #about-block-2 > table {
+  #about-block-2 table {
     font-size: 3vh;
   }
 
@@ -984,9 +983,8 @@ input:focus {
     height: 80vh;
     width: 80vw;
     grid-template-columns: max-content;
-    grid-template-rows: 0fr 0.5fr 0.5fr 0.5fr 2fr 1fr 0.3fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 1fr 0.3fr;
     grid-template-areas:
-      "para"
       "name"
       "email"
       "subject"
@@ -1043,6 +1041,9 @@ input:focus {
   .topnav a.desktop-number {
     float: right;
   }
+  #about-block-1 {
+    height: 100vh;
+  }
   #about-block-1 p {
     font-size: 2.5vw;
     width: 80%;
@@ -1053,6 +1054,11 @@ input:focus {
   #about-block-img img {
     max-height: 100%;
     min-width: 100%;
+  }
+
+  #about-block-img {
+    padding: 10vh;
+    display: block;
   }
   .about-2-gallery {
     flex-wrap: wrap;
@@ -1078,17 +1084,22 @@ input:focus {
   .close {
     top: 24%;
   }
+
+  #about-block-2 {
+    height: 100vh;
+  }
   #about-block-2 h1 {
-    padding-top: 8vh;
+    padding-top: 4vh;
+    font-size: 6vh;
   }
   #about-block-2 p {
-    font-size: 2.5vw;
+    font-size: 2vw;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
   #about-block-2 table {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   #about-block-3 p {
     font-size: 2.5vw;
@@ -1104,9 +1115,8 @@ input:focus {
     text-align: center;
     overflow-y: auto;
     grid-template-columns: max-content;
-    grid-template-rows: 0fr 0.5fr 0.5fr 0.5fr 2fr 1fr 0.3fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 1fr 0.3fr;
     grid-template-areas:
-      "para"
       "name"
       "email"
       "subject"
@@ -1144,6 +1154,7 @@ input:focus {
   }
   .about3email {
     width: 60vw;
+    padding: 8vh 5vh 8vh 5vh;
   }
   textarea {
     font-size: 2.5vh !important;
@@ -1151,5 +1162,6 @@ input:focus {
   }
   #about-block-3 {
     height: 90vh;
+    grid-template-areas: "txt email";
   }
 }
