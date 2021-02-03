@@ -571,15 +571,15 @@ input:focus {
     padding: 4vw 4.5vw;
   }
 
+  /* CONTENT CSS */
+
   .about-block {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-bottom: 5vw;
+    padding: 0 10vw 5vw 10vw;
     width: 100%;
   }
 
   #about-block-1 {
-    font-size: 2.3vh;
+    font-size: 2.5vh;
     font-weight: 500;
     padding-top: 15vh;
   }
@@ -592,14 +592,10 @@ input:focus {
     padding-top: 0.5vh;
   }
 
-  /* #about-block-img{
-    display: none;
-  } */
-
   #about-block-img img,
   .about-2-gallery li {
-    max-height: 90%;
-    min-width: 50%;
+    max-height: 100%;
+    min-width: 100%;
   }
   .about-2-gallery li {
     height: 15vh;
@@ -638,10 +634,19 @@ input:focus {
     right: 6vw;
   }
 
-  #about-block-2 > table {
+  /* OPENING TIMES CSS */
+
+  .tablecont {
+    width: 90%;
+  }
+  #about-block-2 {
+    font-size: 2vh;
+    height: 100vh;
+  }
+  #about-block-2 table {
     font-size: 2.5vh;
   }
-  #about-block-2 > h1 {
+  #about-block-2 h1 {
     font-size: 4vh;
   }
 
@@ -654,7 +659,7 @@ input:focus {
   }
 
   #about-block-3 p {
-    font-size: 2.25vh;
+    font-size: 3vh;
   }
   .contactforms {
     grid-template-columns: 2fr 1fr;
@@ -671,6 +676,9 @@ input:focus {
     width: 100%;
     text-align: center;
   }
+  .about3email {
+    padding-top: 0;
+  }
 
   /* MOBILE MODAL CODE */
   .modalContent {
@@ -679,9 +687,8 @@ input:focus {
     height: 80vh;
     width: 90vw;
     grid-template-columns: max-content;
-    grid-template-rows: 0fr 0.5fr 0.5fr 0.5fr 2fr 1fr 0.3fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 1fr 0.3fr;
     grid-template-areas:
-      "para"
       "name"
       "email"
       "subject"
@@ -746,18 +753,20 @@ input:focus {
 
   /* About Content 1 */
   #about-block-1 {
-    height: 150vh;
+    height: 100vh;
   }
   #about-block-1 p {
-    font-size: 6vh;
+    font-size: 4vh;
     width: 90%;
   }
   #about-block-1 h1 {
-    font-size: 8vh;
+    font-size: 6vh;
+    padding-top: 5vh;
   }
 
   #about-block-img {
     display: none;
+    height: 0vh;
     background-color: rgb(105, 105, 105);
   }
 
@@ -779,21 +788,21 @@ input:focus {
 
   /* About Content 2 */
   #about-block-2 {
-    height: 150vh;
+    height: 100vh;
   }
   #about-block-2 h1 {
-    font-size: 8vh;
+    font-size: 5vh;
     margin-top: 1vh;
     padding-top: 5vh;
   }
   #about-block-2 p {
-    font-size: 6vh;
+    font-size: 4vh;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
   #about-block-2 table {
-    font-size: 6vh;
+    font-size: 4vh;
   }
 
   /* About Content 3 */
