@@ -136,10 +136,25 @@ th {
 }
 
 #about-block-1 {
-  padding-top: 20vh;
-  font-size: 3vh;
+  padding-top: 10vh;
+  font-size: 3.5vh;
   width: 100%;
-  /* font-weight: bold; */
+}
+#about-block-1::after {
+  content: "";
+  background: url("../../images/backgrounds/aboutbg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
 }
 
 .about-2-gallery {
@@ -295,29 +310,36 @@ img.hover-shadow {
 
 #about-block-2 {
   width: 100%;
-  border-top: 10vh double #333;
-  border-bottom: 10vh double #333;
   font-size: 2.5vh;
+  background: url("../../images/backgrounds/aboutbg2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-#about-block-2 > table {
+#about-block-2 table {
   font-size: 1.3em;
   z-index: 1;
 }
-#about-block-2 > h1 {
-  padding-top: 17.5vh;
+.tablecont {
+  border-radius: 1vh;
+  background-color: rgba(178, 174, 168, 0.8);
+  width: max-content;
+  margin: auto;
+  margin-top: 20vh;
+  padding: 2vh;
 }
 
 .about3text {
   grid-area: txt;
-  padding: 10vh 0 0 5vw;
+  padding: 20vh 0 0 5vw;
 }
 .about3email {
   grid-area: email;
-  padding: 5vw;
+  padding: 25vh 5vw 0 5vw;
 }
 #about-block-3 {
   width: 100vw;
-  padding-bottom: 10vh;
   font-size: 3vh;
   height: 100vh;
 
@@ -380,13 +402,13 @@ img.hover-shadow {
   grid-template-rows: 1fr 1fr 1fr 1fr 0.1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "para para"
     "name message"
     "email message"
     "subject message"
     "errorMsg send";
 
   overflow-y: hidden;
+  height: 50vh;
 }
 
 .modalBox1 {
