@@ -362,9 +362,6 @@ img.hover-shadow {
   grid-template-columns: 1fr 1fr;
 }
 
-
-
-
 /* MODAL CODE */
 .modal {
   width: 100%;
@@ -636,9 +633,6 @@ input:focus {
   #about-block-3 p {
     font-size: 2.25vh;
   }
-  .mobile-number {
-    font-size: 3.5vh !important;
-  }
   .contactforms {
     grid-template-columns: 2fr 1fr;
   }
@@ -812,15 +806,15 @@ input:focus {
       "message"
       "send"
       "errorMsg"; */
-      grid-template-rows: 10fr 10fr 10fr 5fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        "name message"
-        "email message"
-        "subject message"
-        "errorMsg send";
-    
-      overflow-y: hidden;
+    grid-template-rows: 10fr 10fr 10fr 5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name message"
+      "email message"
+      "subject message"
+      "errorMsg send";
+
+    overflow-y: hidden;
   }
   .modalBox1 {
     display: none;
