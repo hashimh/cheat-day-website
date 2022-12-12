@@ -20,7 +20,7 @@
   "homepage": "https://github.com/hashimh/FeastWebsite#readme",
   "dependencies": {
     "dotenv": "^8.6.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nodemailer": "^6.6.0"
   },
   "devDependencies": {}
